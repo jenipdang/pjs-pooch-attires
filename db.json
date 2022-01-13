@@ -1,0 +1,445 @@
+{
+    "products": [
+      {
+        "id": 1,
+        "name": "Slip On Bandana - Red Tartan",
+        "description": "Instant Cool for your dog. Just slide the Royal Stewart Dog Bandana onto your dog's existing collar. They'll be the talk of the park in no time. Available in 2 sizes: Large/Medium and Small.",
+        "category": "Bandana",
+        "amount": 15.99,
+        "like": 3,
+        "care":"Machine washable. Made from Royal Stewart Tartan",
+        "availability": {
+            "medium/large": 2,
+            "small": 4
+        },
+        "images": {
+            "front": "/images/bandana/Tartan-Red.jpeg",
+            "back": "/images/bandana/RED-TARTAN-BANDANA-ON-GOOSE.jpeg"
+        }
+      },
+      {
+        "id": 2,
+        "name": "Slip On Bandana - Candy Stripe",
+        "description": "Instant style for your dog. Just slide the Candy Stripe Dog Bandana onto your dog’s existing collar. Available in 2 sizes: Large/Medium and Small.",
+        "category": "Bandana",
+        "amount": 15.99,
+        "like": 3,
+        "care":"Machine washable. Made from Green Tartan",
+        "availability": {
+            "medium/large": 2,
+            "small": 4
+        },
+        "images": {
+            "front": "/images/bandana/candy-stripe.jpeg",
+            "back": "/images/bandana/RED-STRIPE-MASK-BANDANA.jpeg"
+        }
+      },
+      {
+        "id": 3,
+        "name": "Slip On Bandana - Green Tartan",
+        "description": "Instant cool for your dog.  Just slide the Green Tartan Dog Bandana onto your dog’s existing collar.  They’ll be the envy of the their buddies in no time. Available in 2 sizes: Large/Medium and Small.",
+        "category": "Bandana",
+        "amount": 15.99,
+        "like": 4,
+        "care":"Machine washable. Made from Green Tartan",
+        "availability": {
+            "medium/large": 2,
+            "small": 4
+        },
+        "images": {
+            "front": "public/images/bandana/Green-Tartan.jpeg"
+        }
+      },
+      {
+        "id": 4,
+        "name": "Slip On Bandana - Mini Stars on Red",
+        "description": "Instant cool for your dog.  Just slide the Mini Red Stars Dog Bandana onto your dog’s existing collar. Available in 2 sizes: Large/Medium and Small.",
+        "category": "Bandana",
+        "care":"Machine washable. Made from printed cotton",
+        "amount": 15.99,
+        "like": 4,
+        "availability": {
+            "medium/large": 2,
+            "small": 4
+        },
+        "images": {
+            "front": "/images/bandana/Red-Star.jpeg",
+            "back": "/images/bandana/MINI-STARS.jpeg"
+        }
+      },
+      {
+        "id": 5,
+        "name": "Slip On Bandana - Red Gingham",
+        "description": "Instant cool for your dog.  Just slide the Red Gingham Dog Bandana onto your dog’s existing collar.  They’ll be the envy of the park in no time. Available in 2 sizes: Large/Medium and Small.",
+        "category": "Bandana",
+        "care": "Machine washable. Made from printed cotton",
+        "amount": 15.99,
+        "like": 4,
+        "availability": {
+            "medium/large": 2,
+            "small": 4
+        },
+        "images": {
+            "front": "/images/bandana/Red-Gingham.jpeg"
+        }
+      },
+      {
+        "id": 6,
+        "name": "Slip On Bandana - Anchors",
+        "description": "Instant cool for your dog.  Just slide the Nautical Dog Bandana – Anchors onto your dog’s existing collar. Ship Ahoy! Available in 2 sizes: Large/Medium and Small.",
+        "category": "Bandana",
+        "care": "Machine washable. Made from printed cotton",
+        "amount": 15.99,
+        "like": 4,
+        "availability": {
+            "medium/large": 2,
+            "small": 4
+        },
+        "images": {
+            "front": "/images/bandana/Red-Anchor-Square.jpeg",
+            "back": "/images/bandana/RED-ACHOR.jpeg"
+        }
+      },
+      {
+        "id": 7,
+        "name": "Slip On Bandana - Cherries",
+        "description": "Instant style for your dog. Just slide the Cotton Dog Bandana – Cherries. Just slide the Cherries Bandana onto your dog’s existing collar. Available in 2 sizes: Large/Medium and Small.",
+        "category": "Bandana",
+        "care": "Machine washable. Made from printed cotton.",
+        "amount": 15.99,
+        "like": 4,
+        "availability": {
+            "medium/large": 2,
+            "small": 4
+        },
+        "images": {
+            "front": "/images/bandana/Cherries.jpeg",
+            "back": "/images/bandana/CHERRIES-BANADANA.jpeg"
+        }
+      },
+      {
+        "id": 8,
+        "name": "Slip On Bandana - Red Dots",
+        "description": "Instant cool for your dog.  Just slide the Cotton Dog Bandana – Red Dots onto your dog’s collar existing collar. Available in 2 sizes: Large/Medium and Small",
+        "category": "Bandana",
+        "care": "Machine washable. Made from printed cotton.",
+        "amount": 15.99,
+        "like": 4,
+        "availability": {
+            "medium/large": 2,
+            "small": 4
+        },
+        "images": {
+            "front": "/images/bandana/Red-Polkadot.jpeg",
+            "back": "/images/bandana/RED-POLKADOTS.jpeg"
+        }
+      },
+      {
+        "id": 9,
+        "name": "Slip On Bandana - Demin Astro",
+        "description": "Instant cool for your dog.  Just slide the Denim Astro Bandana onto your dog’s existing collar for some galactic fun. Available in 2 sizes: Large/Medium and Small",
+        "category": "Bandana",
+        "care": "Machine washable. Made from printed denim.",
+        "amount": 15.99,
+        "like": 4,
+        "availability": {
+            "medium/large": 2,
+            "small": 4
+        },
+        "images": {
+            "front": "/images/bandana/Denim-Stars-Bandana.jpeg",
+            "back": "/images/bandana/STARS-BANDANA.jpeg"
+        }
+      },
+      {
+        "id": 10,
+        "name": "Slip On Bandana - Lime Bomb",
+        "description": "Instant cool for your dog.  Just slide the Lime Bomb Dog Bandana onto your dog’s collar. Easy. Available in 2 sizes: Large/Medium and Small",
+        "category": "Bandana",
+        "care": " Machine washable. Made from printed cotton.",
+        "amount": 15.99,
+        "like": 4,
+        "availability": {
+            "medium/large": 2,
+            "small": 4
+        },
+        "images": {
+            "front": "/images/bandana/Green-Comic-Bandana.jpeg",
+            "back": "/images/bandana/COMIC-MASK-BANDANA.jpeg"
+        }
+      },
+      {
+        "id": 11,
+        "name": "Slip On Bandana - Lime Bomb",
+        "description": "Instant cool for your dog.  Just slide the Unicorns Dog Bandana onto your dog’s existing collar.  They’ll be the talk of the park in no time.Available in 2 sizes: Large/Medium and Small",
+        "category": "Transportation",
+        "care": "Machine washable. Made from printed cotton.",
+        "amount": 15.99,
+        "like": 5,
+        "availability": {
+            "medium/large": 2,
+            "small": 4
+        },
+        "images": {
+            "front": "/images/bandana/Blue-Unicorns.jpeg",
+            "back": "/images/bandana/UNICORNS-BANDANA.jpeg"
+        }
+      },
+      {
+        "id": 12,
+        "name": "Slip On Bandana - Navy Chevron",
+        "description": "Instant cool for your dog.  Just slide the Navy Chevron Dog bandana onto your dog’s collar existing collar for instant cool.  They’ll be the talk of the park in no time. Available in 2 sizes: Large/Medium and Small",
+        "category": "Bandana",
+        "care": "Machine washable. Made from printed cotton.",
+        "amount": 15.99,
+        "like": 0,
+        "availability": {
+            "medium/large": 2,
+            "small": 4
+        },
+        "images": {
+            "front": "/images/bandana/Navy-Chevron.jpeg",
+            "back": "/images/bandana/ZIGZAG-BANDANA.jpeg"
+        }
+      },
+      {
+        "id": 13,
+        "name": "Tartan Bow Tie",
+        "description": "Bow Tie – One size only: approx 14 x 6cm. Strong elasticated back to slide the bow tie on to the collar.",
+        "category": "Bow Tie",
+        "care": "Machine washable. Made from printed cotton.",
+        "amount": 10.99,
+        "like": 0,
+        "availability": {
+            "one-size": 2
+        },
+        "images": {
+            "front": "/images/bowties/web-Tartan-Bow-Tie.jpeg"
+        }
+      },
+      {
+        "id": 14,
+        "name": "Candy Stripe Bow Tie",
+        "description": "Bow Tie – One size only: approx 14 x 6cm. Strong elasticated back to slide the bow tie on to the collar.",
+        "category": "Bow Tie",
+        "care": "Machine washable. Made from printed cotton.",
+        "amount": 10.99,
+        "like": 0,
+        "availability": {
+            "one-size": 2
+        },
+        "images": {
+            "front": "/images/bowties/Red-Stripe-Bow-Tie.jpeg",
+            "back": "/images/bowties/Red-Stripe-Bow-Tie-On-Kobu.jpeg"
+        }
+      },
+      {
+        "id": 15,
+        "name": "Anchor Dog Bow Tie",
+        "description": "Bow Tie – One size only: approx 14 x 6cm. Strong elasticated back to slide the bow tie on to the collar.",
+        "category": "Bow Tie",
+        "care": "Machine washable. Made from printed cotton.",
+        "amount": 10.99,
+        "like": 0,
+        "availability": {
+            "one-size": 2
+        },
+        "images": {
+            "front": "/images/bowties/Anchor-Bow-Tie.jpeg"
+        }
+      },
+      {
+        "id": 16,
+        "name": "Chevron Dog Bow Tie",
+        "description": "Bow Tie – One size only: approx 14 x 6cm. Strong elasticated back to slide the bow tie on to the collar.",
+        "category": "Bow Tie",
+        "care": "Machine washable. Made from printed cotton.",
+        "amount": 10.99,
+        "like": 0,
+        "availability": {
+            "one-size": 2
+        },
+        "images": {
+            "front": "/images/bowties/Chevron-Bow-Tie.jpeg",
+            "back": "/images/bowties/Zigzag-Bow-Tie.jpeg"
+        }
+      },
+      {
+        "id": 17,
+        "name": "Cherries Dog Bow Tie",
+        "description": "Bow Tie – One size only: approx 14 x 6cm. Strong elasticated back to slide the bow tie on to the collar.",
+        "category": "Bow Tie",
+        "care": "Machine washable. Made from printed cotton.",
+        "amount": 10.99,
+        "like": 0,
+        "availability": {
+            "one-size": 2
+        },
+        "images": {
+            "front": "/images/bowties/Cherry-Bow-Tie.jpeg"
+        }
+      },
+      {
+        "id": 18,
+        "name": "Blue Deckchair Striped Dog Bow Tie",
+        "description": "Bow Tie – One size only: approx 14 x 6cm. Strong elasticated back to slide the bow tie on to the collar.",
+        "category": "Bow Tie",
+        "care": "Machine washable. Made from printed cotton.",
+        "amount": 10.99,
+        "like": 0,
+        "availability": {
+            "one-size": 2
+        },
+        "images": {
+            "front": "/images/bowties/Deckchair-Bow-Tie.jpeg",
+            "back": "/images/bowties/Deckchair-Bow-Ties.jpeg"
+        }
+      },
+      {
+        "id": 19,
+        "name": "Pirate Dog Bow Tie",
+        "description": "Bow Tie – One size only: approx 14 x 6cm. Strong elasticated back to slide the bow tie on to the collar.",
+        "category": "Bow Tie",
+        "care": "Machine washable. Made from printed cotton.",
+        "amount": 10.99,
+        "like": 0,
+        "availability": {
+            "one-size": 2
+        },
+        "images": {
+            "front": "/images/bowties/Pirate-Bow-Tie.jpeg"
+        }
+      },
+      {
+        "id": 20,
+        "name": "Black Dog Bow Tie",
+        "description": "Bow Tie – One size only: approx 14 x 6cm. Strong elasticated back to slide the bow tie on to the collar.",
+        "category": "Bow Tie",
+        "care": "Machine washable. Made from printed cotton.",
+        "amount": 10.99,
+        "like": 0,
+        "availability": {
+            "one-size": 2
+        },
+        "images": {
+            "front": "/images/bowties/Black-Bow-Tie.jpeg"
+        }
+      },
+      {
+        "id": 21,
+        "name": "Flamingo Dog Bow Tie",
+        "description": "Bow Tie – One size only: approx 14 x 6cm. Strong elasticated back to slide the bow tie on to the collar.",
+        "category": "Bow Tie",
+        "care": "Machine washable. Made from printed cotton.",
+        "amount": 10.99,
+        "like": 0,
+        "availability": {
+            "one-size": 2
+        },
+        "images": {
+            "front": "/images/bowties/Flamingo-Bow-Tie.jpeg",
+            "back": "/images/bowties/Flamingo-Bow-Ties.jpeg"
+        }
+      },
+      {
+        "id": 22,
+        "name": "Red White Stripe Dog Bow Tie",
+        "description": "Bow Tie – One size only: approx 14 x 6cm. Strong elasticated back to slide the bow tie on to the collar.",
+        "category": "Bow Tie",
+        "care": "Machine washable. Made from printed cotton.",
+        "amount": 10.99,
+        "like": 0,
+        "availability": {
+            "one-size": 2
+        },
+        "images": {
+            "front": "/images/bowties/Red-Deckchair-Bow-Tie.jpeg"
+        }
+      },
+      {
+        "id": 23,
+        "name": "Demin Dog Coat with Patches",
+        "description": "Denim dog coat with a super soft navy fleece lining.  The coat fastens with long strips of velcro to ensure a very flexible fit. The coat comes with 2 sew on patches and a length of trim so that you can customise the coat yourself. Available in 2 sizes. Small: 50 cm Velcro strap. 28 cm length from collar to rear. 30 cm wide. Neck is approximately 34 cm. Medium: 58 cm Velcro strap. 36 cm length from collar to rear. 36 cm wide. Neck is approximately 50 cm.",
+        "category": "Coat",
+        "care": "Fully machine washable, but check any additional patches and trim that you sew on for washing instructions.",
+        "amount": 40.99,
+        "like": 0,
+        "availability": {
+            "medium": 2,
+            "small": 4
+        },
+        "images": {
+            "front": "/images/coat/Denim-Dog-Coat.jpeg",
+            "back": "/images/coat/Demin-Rainbow-Dog-Coat.jpeg"
+        }
+      },
+      {
+        "id": 24,
+        "name": "Frisco Boulder Plaid Insulated Dog Puffer Coat",
+        "description": "Taking in that crisp mountain air? When the weather gets a tad chilly, it’s the perfect time to head outside! Inspired by a city that embraces the outdoors, this lightweight puffer coat is designed to keep your pal warm so you can explore together. A soft fleece lining provides a comfy layer of warmth for cooler temperatures, and the water-resistant exterior and covered leash hole adds a layer of protection for all your walks. That’s the function, now for the fashion—the V-shaped plaid look is so chic this season.",
+        "category": "Coat",
+        "care": "Fully machine washable, but check sew on for washing instructions.",
+        "amount": 14.99,
+        "like": 764,
+        "availability": {
+            "medium": 2,
+            "small": 4
+        },
+        "images": {
+            "front": "/images/coat/Frisco-Boulder-Plaid.jpeg",
+            "back": "/images/coat/Frisco-Boulder-Plaids.jpeg"
+        }
+      },
+      {
+        "id": 25,
+        "name": "Frisco Portland Insulated Dog Parka",
+        "description": "Keep your furry hipster warm all winter without compromising on style. This pet parka is designed to protect your pet from chilly weather while keeping it chill. It’s designed with a comfy plush lining to turn up the cozy and a detachable faux fur-lined hood for that wintry glam. A midrise collar provides more coverage for your pet’s neck area from chilly conditions. The outer shell is water-resistant to protect from rain and light snow, and comes in trendy, satiny colors. Plus, it has a covered leash hole so you can easily access a collar underneath the parka.",
+        "category": "Coat",
+        "care": "Fully machine washable, but check sew on for washing instructions.",
+        "amount": 17.99,
+        "like": 216,
+        "availability": {
+            "medium": 2,
+            "small": 4
+        },
+        "images": {
+            "front": "/images/coat/Frisco-Portland.jpeg",
+            "back": "/images/coat/Frisco-Portland-Insulated.jpeg"
+        }
+      },
+      {
+        "id": 26,
+        "name": "Frisco Reflective Water-Resistant Insulated Dog Coat",
+        "description": "This coat is guaranteed to bring high quality, cold weather comfort to your companion’s wardrobe. This puffy coat is made with a water-resistant polyester shell with reflective accents to keep your pet dry and stylish. With this wardrobe must-have, the winter forecast is cute and cozy.",
+        "category": "Coat",
+        "care": "Fully machine washable, but check sew on for washing instructions.",
+        "amount": 20.99,
+        "like": 40,
+        "availability": {
+            "medium": 2,
+            "small": 4
+        },
+        "images": {
+            "front": "/images/coat/Frisco-Reflective-Water.jpeg",
+            "back": "/images/coat/Frisco-Reflective-Water-Resis.jpeg"
+        }
+      },
+      {
+        "id": 27,
+        "name": "Frisco Rainy Days Dog Raincoat",
+        "description": "Remember to measure your pet for the paw-fect fit. Rain or shine, always be ready to go with the Frisco Dog Rainy Days Raincoat. This doggy raincoat is made with a water-resistant PVC coating designed to keep your pup dry come drizzle or downpour, and it has secure neck and belly fuzzy fastener straps to ensure a snug fit all around—and a drier pooch. The built-in leash hole lets you attach a leash to a collar worn underneath the raincoat, so you can always be ready to dash, and the large reflective stripes help increase visibility for added safety. Plus, it’s available in different sizes to fit pups of most proportions",
+        "category": "Coat",
+        "care": "Fully machine washable, but check sew on for washing instructions.",
+        "amount": 13.99,
+        "like": 533,
+        "availability": {
+            "medium": 2,
+            "small": 4
+        },
+        "images": {
+            "front": "/images/coat/Frisco-raincoat-rainy-day.jpeg",
+            "back": "/images/coat/Frisco-Raincoat.jpeg"
+        }
+      }
+    ]
+  }
