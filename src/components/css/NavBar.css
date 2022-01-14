@@ -30,7 +30,7 @@ nav .nav-cart{
     cursor: pointer;
     position: relative;
 }
-nav .nav-cart span{
+.nav-cart span{
     position: absolute;
     top:-12px;
     right: -7px;
