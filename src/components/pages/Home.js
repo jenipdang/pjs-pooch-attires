@@ -2,6 +2,7 @@ import { useState, useEffect } from 'react';
 import { FiChevronRight, FiChevronLeft } from 'react-icons/fi';
 import { FaQuoteRight } from 'react-icons/fa';
 import { model } from '../data/data';
+import { Nav } from 'react-bootstrap';
 
 const Home = () => {
 	const [feature, setFeature] = useState([]);
@@ -26,10 +27,13 @@ const Home = () => {
 
 	return (
 		<section className="section">
+			<div></div>
 			<div className="title">
 				<h2>
-					<span>/</span>Forever Favorites
+					<span>/</span>READY FOR ANY OCCASIONS!
 				</h2>
+				<Nav.Link href="/products">SHOP NOW</Nav.Link>
+				<div className='underline'></div>
 			</div>
 			<div className="section-center">
 				{model.map((model, modelIndex) => {

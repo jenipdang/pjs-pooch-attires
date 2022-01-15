@@ -1,7 +1,7 @@
 import React from 'react';
 import { RiShoppingBagLine } from 'react-icons/ri';
 import { BsPerson } from 'react-icons/bs';
-import { Navbar, Nav, Container, Form, FormControl, Button } from 'react-bootstrap';
+import { Navbar, Nav, Container } from 'react-bootstrap';
 import '../css/NavBar.css';
 
 const NavBar = () => {
@@ -21,15 +21,6 @@ const NavBar = () => {
 							<RiShoppingBagLine />
 						</Nav.Link>
 					</Nav>
-					<Form className="d-flex">
-						<FormControl
-							type="search"
-							placeholder="Search"
-							className="me-2"
-							aria-label="Search"
-						/>
-						<Button variant="light">Search</Button>
-					</Form>
 				</Navbar.Collapse>
 			</Container>
 		</Navbar>

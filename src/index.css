@@ -222,6 +222,14 @@ article h4 {
 .next {
   right: 0;
 }
+
+.underline {
+  width: 6rem;
+  height: 0.25rem;
+  background: var(--clr-primary-5);
+  margin-left: auto;
+  margin-right: auto;
+}
 @media (min-width: 800px) {
   .text {
     max-width: 45em;

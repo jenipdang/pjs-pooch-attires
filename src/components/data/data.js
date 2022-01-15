@@ -85,14 +85,14 @@ export const model = [
     amount: 29.99,
   },
   {
-    id: 6,
+    id: 7,
     image: './images/home/teddyBear.jpeg',
     name: 'Teddy Bear Costume',
     title: 'What is that coming at everyone! OMG! It is a tiny bear!',
     amount: 29.99,
   },
   {
-    id: 7,
+    id: 8,
     image: './images/home/xmasSweater.jpeg',
     name: 'Red Christmas Sweater',
     title: 'Looking better than Santa',

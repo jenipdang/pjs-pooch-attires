@@ -1,11 +1,18 @@
-import React from 'react'
+import React from 'react';
+import { Form, FormControl, Button } from 'react-bootstrap';
 
 const Search = () => {
-    return (
-        <div>
-            <h2>Search</h2>
-        </div>
-    )
-}
+	return (
+		<Form className="d-flex">
+			<FormControl
+				type="search"
+				placeholder="Search"
+				className="me-2"
+				aria-label="Search"
+			/>
+			<Button variant="light">Search</Button>
+		</Form>
+	);
+};
 
-export default Search
+export default Search;

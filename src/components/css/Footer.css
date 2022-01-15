@@ -5,6 +5,9 @@
     position: relative;
     bottom: 0;
     width: 100%;
+    font-family: 'Segoe UI', Roboto, Oxygen,
+    Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 0.875rem;
   }
 
   .social-icons {
