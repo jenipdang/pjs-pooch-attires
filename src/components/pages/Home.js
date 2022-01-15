@@ -20,7 +20,7 @@ const Home = () => {
 	useEffect(() => {
 		let slider = setInterval(() => {
 			setIndex(index + 1);
-		}, 5000);
+		}, 7000);
 		return () => clearInterval(slider);
 	}, [index]);
 
@@ -28,7 +28,7 @@ const Home = () => {
 		<section className="section">
 			<div className="title">
 				<h2>
-					<span>/</span>Feature Items
+					<span>/</span>Forever Favorites
 				</h2>
 			</div>
 			<div className="section-center">
@@ -53,7 +53,7 @@ const Home = () => {
 							<img src={image} alt={name} className="person-img" />
 							<h4>{name}</h4>
 							<p className="title">{title}</p>
-							<p className="text">{amount}</p>
+							<p className="text">${amount}</p>
 							<FaQuoteRight className="icon" />
 						</article>
 					);

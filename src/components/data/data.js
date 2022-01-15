@@ -60,7 +60,7 @@ export const model = [
     id: 3,
     image: './images/home/starsbandana.jpeg',
     name: 'Stars Bandana',
-    title: 'Ready for the some fun at the beach',
+    title: 'Ready for some fun at the beach',
     amount: 10.99,
   },
   {
@@ -75,6 +75,27 @@ export const model = [
     image: './images/home/xmas.jpeg',
     name: 'Knited Christmas Sweater',
     title: 'So ready for the UGLY SWEATER purrty with paw-friends',
+    amount: 19.99,
+  },
+  {
+    id: 6,
+    image: './images/home/patrolOfficer.jpeg',
+    name: 'Patrol Officer Costume',
+    title: 'What out! Officer PJ is on duty',
+    amount: 29.99,
+  },
+  {
+    id: 6,
+    image: './images/home/teddyBear.jpeg',
+    name: 'Teddy Bear Costume',
+    title: 'What is that coming at everyone! OMG! It is a tiny bear!',
+    amount: 29.99,
+  },
+  {
+    id: 7,
+    image: './images/home/xmasSweater.jpeg',
+    name: 'Red Christmas Sweater',
+    title: 'Looking better than Santa',
     amount: 19.99,
   },
 ];
