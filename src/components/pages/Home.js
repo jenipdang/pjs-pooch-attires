@@ -5,7 +5,6 @@ import { model } from '../data/data';
 import { Nav } from 'react-bootstrap';
 
 const Home = () => {
-	const [feature, setFeature] = useState([]);
 	const [index, setIndex] = useState(0);
 
 	useEffect(() => {
@@ -16,7 +15,7 @@ const Home = () => {
 		if (index > lastIndex) {
 			setIndex(0);
 		}
-	}, [index, model]);
+	}, [index]);
 
 	useEffect(() => {
 		let slider = setInterval(() => {

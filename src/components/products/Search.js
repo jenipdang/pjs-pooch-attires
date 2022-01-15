@@ -15,10 +15,10 @@ function Search({ term, searchKeyword }) {
         type="search"
         ref={inputEl}
         value={term}
-        placeholder="Search a product"
+        placeholder="Product Search"
         onChange={getSearchTerm}
       />
-      <button className="btn btn-outline-success" type="submit">Search</button>
+      <button className="btn btn-outline-dark" type="submit">Search</button>
     </form>
   );
 }

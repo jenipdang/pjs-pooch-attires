@@ -1,8 +1,10 @@
 import React, { useState, useEffect } from 'react';
 import Search from './Search';
 import ProductList from './ProductList';
+import Loading from '../pages/Loading';
 import { Container } from 'semantic-ui-react';
 import FilterCategory from './FilterByCategory';
+
 
 const url = 'http://localhost:3001/products';
 
@@ -32,11 +34,12 @@ const ProductContainer = () => {
 	}, []);
 
 	if (loading) {
-		return 'Loading...';
+		return <div>
+            <Loading />
+        </div>;
 	}
 
 	const filterResult = (categoryItem) => {
-        setSearch(search)
 		if (categoryItem === 'All') {
 			setSearchResult(products);
 			return;
@@ -48,6 +51,7 @@ const ProductContainer = () => {
 	};
 
 	const searchHandler = (search) => {
+        setSearch(search)
 		if (search !== '') {
 			const newProduct = searchResult.filter((product) => {
 				return Object.values(product)
