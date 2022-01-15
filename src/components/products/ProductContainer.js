@@ -55,7 +55,10 @@ const ProductContainer = () => {
 					.toLowerCase()
 					.includes(search.toLowerCase());
 			});
-		}
+            setSearchResult(newProduct)
+		} else {
+            setSearchResult(products)
+        }
 	};
 
 	return (

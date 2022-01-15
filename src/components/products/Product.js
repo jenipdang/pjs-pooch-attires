@@ -1,9 +1,10 @@
-import React from 'react'
+import React, {useState} from 'react'
 import { Card } from "semantic-ui-react"
 import { Link } from 'react-router-dom'
 // import './css/Details.css'
 
 const Product = ({products, addCart}) => {
+    const [readMore, setReadMore] = useState(false)
     return (
         <Card>
         {
