@@ -29,7 +29,7 @@ const Footer = () => {
           </div>
           {/* Column2 */}
           <div className="col">
-            <h4>Customer Service</h4>
+            <h4>Client Care</h4>
             <ul className="list-unstyled">
               <li>Contact Us</li>
               <li>Help</li>
@@ -38,7 +38,7 @@ const Footer = () => {
           </div>
            {/* Column3 */}
            <div className="col">
-            <h4>About</h4>
+            <h4>Our Company</h4>
             <ul className="list-unstyled">
               <li>Overview</li>
               <li>Community</li>
