@@ -47,7 +47,7 @@
             "small": 4
         },
         "images": {
-            "front": "public/images/bandana/Green-Tartan.jpeg"
+            "front": "/images/bandana/Green-Tartan.jpeg"
         }
       },
       {
@@ -136,7 +136,7 @@
       },
       {
         "id": 9,
-        "name": "Slip On Bandana - Demin Astro",
+        "name": "Slip On Bandana - Denim Astro",
         "description": "Instant cool for your dog.  Just slide the Denim Astro Bandana onto your dog’s existing collar for some galactic fun. Available in 2 sizes: Large/Medium and Small",
         "category": "Bandana",
         "care": "Machine washable. Made from printed denim.",
