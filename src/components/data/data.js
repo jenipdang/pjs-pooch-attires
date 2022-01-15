@@ -41,3 +41,43 @@ export const social = [
   },
 ];
 
+export const model = [
+  {
+    id: 1,
+    image: './images/home/bowtie.jpeg',
+    name: 'Solid Black Bow Tie',
+    title: 'Alway picture ready',
+    amount: 13.99,
+  },
+  {
+    id: 2,
+    image:'./images/home/dotsbowtie.jpeg',
+    name: 'Pokadots Bow Tie',
+    title: 'Silly in pokedots',
+    amount: 13.99,
+  },
+  {
+    id: 3,
+    image: './images/home/starsbandana.jpeg',
+    name: 'Stars Bandana',
+    title: 'Ready for the some fun at the beach',
+    amount: 10.99,
+  },
+  {
+    id: 4,
+    image: './images/home/xmaspj.jpeg',
+    name: 'Cozy Plaid Print Pajama',
+    title: 'Sleep like a boss in this cozy plaid print pajama',
+    amount: 25.99,
+  },
+  {
+    id: 5,
+    image: './images/home/xmas.jpeg',
+    name: 'Knited Christmas Sweater',
+    title: 'So ready for the UGLY SWEATER purrty with paw-friends',
+    amount: 19.99,
+  },
+];
+
+
+

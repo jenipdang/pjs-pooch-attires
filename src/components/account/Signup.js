@@ -3,7 +3,8 @@ import React from 'react'
 const Signup = () => {
     return (
         <div>
-            <h2>Sign up</h2>
+            <h2>Create an Account</h2>
+            
         </div>
     )
 }
