@@ -2,25 +2,25 @@
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
-    margin: 50px 0;
+    margin: 30px 0;
 }
 .details img{
-    max-width: 500px;
-    min-width: 290px;
-    height: 300px;
+    max-width: 400px;
+    min-width: 190px;
+    height: 250px;
     display: block;
     object-fit: cover;
     margin: 25px;
 }
 .details .box{
     max-width: 500px;
-    min-width: 290px;
-    margin: 25px;
+    min-width: 190px;
+    margin: 20px;
 }
 .box .row{
     display: flex;
     justify-content: space-between;
-    margin-bottom: 15px;
+    margin-bottom: 10px;
 }
 .box .row h2{
     text-transform: uppercase;

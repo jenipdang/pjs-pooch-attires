@@ -6,7 +6,7 @@ import { Container } from 'semantic-ui-react';
 import FilterCategory from './FilterByCategory';
 
 
-// const url = 'http://localhost:3001/products';
+const url = 'http://localhost:3001/products';
 
 const ProductContainer = () => {
 	const [loading, setLoading] = useState(true);
@@ -14,36 +14,24 @@ const ProductContainer = () => {
 	const [search, setSearch] = useState('');
 	const [searchResult, setSearchResult] = useState([]);
 
-	// const fetchProducts = async () => {
-	// 	setLoading(true);
+	const fetchProducts = async () => {
+		setLoading(true);
 
-	// 	try {
-	// 		const response = await fetch(url);
-	// 		const data = await response.json();
-	// 		setLoading(false);
-	// 		setProducts(data);
-	// 		setSearchResult(data);
-	// 	} catch (error) {
-	// 		setLoading(false);
-	// 		alert(error);
-	// 	}
-	// };
-
-	// useEffect(() => {
-	// 	fetchProducts();
-	// }, []);
+		try {
+			const response = await fetch(url);
+			const data = await response.json();
+			setLoading(false);
+			setProducts(data);
+			setSearchResult(data);
+		} catch (error) {
+			setLoading(false);
+			alert(error);
+		}
+	};
 
 	useEffect(() => {
-		fetch('http://localhost:3001/products')
-		.then (r => r.json())
-		.then ((data) => {
-			setLoading(false)
-			setProducts(data)
-			setSearchResult(data)
-		}).catch((err) => {
-			alert(err)
-		})
-	}, [])
+		fetchProducts();
+	}, []);
 
 	if (loading) {
 		return <div>

@@ -2,6 +2,7 @@ import React from 'react'
 import '../css/Details.css'
 import Product from './Product'
 
+
 const ProductList = ({products}) => {
 
     const displayProducts = products.map((product) => (
@@ -9,7 +10,7 @@ const ProductList = ({products}) => {
     ))
 
     return (
-        <div id="product" >
+        <div id="details" >
             {displayProducts.length > 0 ? displayProducts : "No Result Found"}
         </div>
     )
