@@ -1,6 +1,6 @@
 import React from 'react';
 
-const FilterCategory = ({ filterResult, products }) => {
+const FilterCategory = ({ filterResult }) => {
 	return (
 		<>
 			<div className="d-grid gap-2 d-md-flex justify-content-md mb-2 mt-2">FILTER BY CATEGORY
