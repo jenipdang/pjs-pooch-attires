@@ -8,7 +8,7 @@ const Product = ({ product }) => {
 
 	return (
 		<Card style={{ width: '18rem' }} onClick={() => setIsFront(!isFront)}>
-			{isFront ? <Card.Img variant="top" src={images.front}/> : <Card.Img variant="top" src={images.back}/> || null}
+			{isFront ? <Card.Img variant="top" src={images.front}/> : <Card.Img variant="top" src={images.back}/>}
 			<Card.Body>
 				<Card.Title>{name}</Card.Title>
 				<Card.Text>{readMore ? description : `${description.substring(0, 100)}...`}
@@ -21,6 +21,7 @@ const Product = ({ product }) => {
 				<Button variant="dark w-100">Add to Cart</Button>
 			</Card.Body>
 		</Card>
+
 	);
 };
 

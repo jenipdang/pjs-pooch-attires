@@ -3,6 +3,7 @@ import { FiChevronRight, FiChevronLeft } from 'react-icons/fi';
 import { FaQuoteRight } from 'react-icons/fa';
 import { model } from '../data/data';
 import { Nav } from 'react-bootstrap';
+import '../css/Home.css'
 
 const Home = () => {
 	const [index, setIndex] = useState(0);
@@ -20,7 +21,7 @@ const Home = () => {
 	useEffect(() => {
 		let slider = setInterval(() => {
 			setIndex(index + 1);
-		}, 7000);
+		}, 3000);
 		return () => clearInterval(slider);
 	}, [index]);
 

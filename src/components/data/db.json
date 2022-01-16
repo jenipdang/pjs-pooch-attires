@@ -47,7 +47,8 @@
             "small": 4
         },
         "images": {
-            "front": "/images/bandana/Green-Tartan.jpeg"
+            "front": "/images/bandana/Green-Tartan.jpeg",
+            "back": "/images/bandana/Green-Tartan.jpeg"
         }
       },
       {
@@ -80,7 +81,8 @@
             "small": 4
         },
         "images": {
-            "front": "/images/bandana/Red-Gingham.jpeg"
+            "front": "/images/bandana/Red-Gingham.jpeg",
+            "back": "/images/bandana/Red-Gingham.jpeg"
         }
       },
       {
@@ -214,7 +216,8 @@
             "one-size": 2
         },
         "images": {
-            "front": "/images/bowties/web-Tartan-Bow-Tie.jpeg"
+            "front": "/images/bowties/web-Tartan-Bow-Tie.jpeg",
+            "back": "/images/bowties/web-Tartan-Bow-Tie.jpeg"
         }
       },
       {
@@ -245,7 +248,8 @@
             "one-size": 2
         },
         "images": {
-            "front": "/images/bowties/Anchor-Bow-Tie.jpeg"
+            "front": "/images/bowties/Anchor-Bow-Tie.jpeg",
+            "back": "/images/bowties/Anchor-Bow-Tie.jpeg"
         }
       },
       {
@@ -276,7 +280,8 @@
             "one-size": 2
         },
         "images": {
-            "front": "/images/bowties/Cherry-Bow-Tie.jpeg"
+            "front": "/images/bowties/Cherry-Bow-Tie.jpeg",
+            "back": "/images/bowties/Cherry-Bow-Tie.jpeg"
         }
       },
       {
@@ -307,7 +312,8 @@
             "one-size": 2
         },
         "images": {
-            "front": "/images/bowties/Pirate-Bow-Tie.jpeg"
+            "front": "/images/bowties/Pirate-Bow-Tie.jpeg",
+            "back": "/images/bowties/Pirate-Bow-Tie.jpeg"
         }
       },
       {
@@ -322,7 +328,8 @@
             "one-size": 2
         },
         "images": {
-            "front": "/images/bowties/Black-Bow-Tie.jpeg"
+            "front": "/images/bowties/Black-Bow-Tie.jpeg",
+            "back": "/images/bowties/Black-Bow-Tie.jpeg"
         }
       },
       {
@@ -353,7 +360,8 @@
             "one-size": 2
         },
         "images": {
-            "front": "/images/bowties/Red-Deckchair-Bow-Tie.jpeg"
+            "front": "/images/bowties/Red-Deckchair-Bow-Tie.jpeg",
+            "back": "/images/bowties/Red-Deckchair-Bow-Tie.jpeg"
         }
       },
       {
