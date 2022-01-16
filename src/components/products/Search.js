@@ -8,7 +8,7 @@ function Search({ term, searchKeyword }) {
   }
 
   return (
-    <form className="d-flex w-50">
+    <form className="d-flex w-50 mt-2">
       <input
         className="form-control me-2"
         aria-label="Search"
