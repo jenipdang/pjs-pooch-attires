@@ -10,7 +10,7 @@ const NavBar = () => {
 			<Container>
 				<Navbar.Brand href="/">PJ'S POOCH ATTIRES</Navbar.Brand>
 				<Navbar.Toggle aria-controls="responsive-navbar-nav" />
-				<Navbar.Collapse id="responsive-navbar-nav">
+				<Navbar.Collapse id="responsive-navbar-nav" >
 					<Nav className="me-auto">
 						<Nav.Link href="/">Home</Nav.Link>
 						<Nav.Link href="/products">Products</Nav.Link>

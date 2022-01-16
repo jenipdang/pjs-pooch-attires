@@ -1,19 +1,29 @@
 import React, { useState } from 'react';
 import { Card } from 'semantic-ui-react';
 import { Link } from 'react-router-dom';
-import '../css/Details.css'
+import '../css/Details.css';
 
 const Product = ({ products, addCart }) => {
 	const [readMore, setReadMore] = useState(false);
+	const [isFront, setIsFront] = useState(true);
 
 	return (
-		<Card>
+		<Card.Group>
 			{products.map((product) => (
 				<div className="details" key={product.id}>
-					<img
-						src={window.location.origin + product.images.front}
-						alt={product.name}
-					/>
+					<div className='image' onClick={() => setIsFront(!isFront)}>
+						{isFront ? (
+						<img
+							src={window.location.origin + product.images.front}
+							alt={product.name}
+						/>
+					) : (
+						<img
+							src={window.location.origin + product.images.back}
+							alt="Sample on Dog"
+						/>
+					)}
+					</div>
 					<div className="box">
 						<div className="row">
 							<h4>{product.name}</h4>
@@ -38,7 +48,7 @@ const Product = ({ products, addCart }) => {
 					</div>
 				</div>
 			))}
-		</Card>
+		</Card.Group>
 	);
 };
 

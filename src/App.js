@@ -7,7 +7,7 @@ import Signin from './components/account/Signin';
 import Signup from './components/account/Signup';
 import Account from './components/account/Account';
 import ProductContainer from './components/products/ProductContainer';
-import Cart from './components/pages/Cart';
+import Cart from './components/cart/Cart';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
 function App() {

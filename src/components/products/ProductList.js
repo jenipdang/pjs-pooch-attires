@@ -1,5 +1,5 @@
 import React from 'react'
-import '../css/Details.css'
+// import '../css/Details.css'
 import Product from './Product'
 
 
@@ -10,7 +10,7 @@ const ProductList = ({products}) => {
     ))
 
     return (
-        <div id="details" >
+        <div>
             {displayProducts.length > 0 ? displayProducts : "No Result Found"}
         </div>
     )
