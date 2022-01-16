@@ -6,7 +6,6 @@ import Product from './Product'
 const ProductList = ({products}) => {
 
     const displayProducts = products.map((product) => (
-        // <Product key={product.id} name={product.name} description={product.description} amount={product.amount} image={product.images} product={product}/>
         <Product key={product.id} product={product}/>
     ))
 
