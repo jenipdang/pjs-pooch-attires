@@ -35,7 +35,7 @@ const Button = styled.button`
   width: 40%;
   border: none;
   padding: 15px 20px;
-  background-color: teal;
+  background-color: #28282B;
   color: white;
   cursor: pointer;
   margin-bottom: 10px;
@@ -58,7 +58,7 @@ const Signin = () => {
           <Input placeholder="password" />
           <Button>LOGIN</Button>
           <Link>DO NOT YOU REMEMBER THE PASSWORD?</Link>
-          <Link>CREATE A NEW ACCOUNT</Link>
+          <Link href="/account/register">CREATE A NEW ACCOUNT</Link>
         </Form>
       </Wrapper>
     </Container>
