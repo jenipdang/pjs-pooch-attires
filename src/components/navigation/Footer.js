@@ -1,7 +1,6 @@
 import React from "react";
 import "../css/Footer.css";
 import {social} from '../data/data'
-import { Link } from 'react-router-dom'
 
 const Footer = () => {
   return (
@@ -19,6 +18,7 @@ const Footer = () => {
 					);
 				})}
 			</ul>
+      <img src="https://i.ibb.co/Qfvn4z6/payment.png" />
         </div>
           {/* Column1 */}
           <div className="col">
@@ -32,7 +32,7 @@ const Footer = () => {
           <div className="col">
             <h4>Client Care</h4>
             <ul className="list-unstyled">
-              <li><Link to="/contact">Contact Us</Link></li>
+              <li>Contact Us</li>
               <li>Help</li>
               <li>Feedback</li>
             </ul>

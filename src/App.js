@@ -2,7 +2,6 @@ import React from 'react';
 import NavBar from './components/navigation/NavBar';
 import Footer from './components/navigation/Footer';
 import Home from './components/pages/Home';
-import Contact from './components/pages/Contact';
 import Signin from './components/account/Signin';
 import Register from './components/account/Register';
 import Account from './components/account/Account';
@@ -19,7 +18,6 @@ function App() {
 					<Route path="/products" element={<ProductContainer />} />
 					<Route path="/cart" element={<Cart />} />
 					<Route path="/" element={<Home />} />
-					<Route path="/contact" element={<Contact />} />
 					<Route path="/account/signin" element={<Signin />} />
 					<Route path="/account/register" element={<Register />} />
 					<Route path="/account" element={<Account />} />
