@@ -3,7 +3,7 @@ import { Card } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import '../css/Details.css';
 
-const Product = ({ product, addToCart }) => {
+const Product = ({ product, handleClick }) => {
 	const { id, name, amount, description, images, care } = product;
 	const [readMore, setReadMore] = useState(false);
 	const [isFront, setIsFront] = useState(true);
@@ -30,7 +30,7 @@ const Product = ({ product, addToCart }) => {
 						</button>
 					</p>
 					<p>{care}</p>
-					<Link to="/cart" className="cart" onClick={() => addToCart(id)}>
+					<Link to="/cart" className="cart" onClick={() => handleClick(id)}>
 						Add to cart
 					</Link>
 				</div>

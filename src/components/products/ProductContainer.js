@@ -41,11 +41,11 @@ const ProductContainer = () => {
         </div>;
 	}
 
-	const addToCart = (product) => {
-		setCart(currentProduct => [...currentProduct, product])
+	const addItem = (product) => {
+		setCart(currentProducts => [...currentProducts, product])
 	}
 
-	const removeFromCart = (productObj) => {
+	const removeItem = (productObj) => {
 		setCart((cart) => cart.filter((product) => product.id !== productObj.id))
 	}
 
@@ -79,8 +79,8 @@ const ProductContainer = () => {
 		<Container>
 			<Search products={products} term={search} searchKeyword={searchHandler} />
 			<FilterCategory filterResult={filterResult} />
-			<ProductList products={searchResult} addToCart={addToCart}/>
-			<Cart products={cart} removeFromCart={removeFromCart}/>
+			<ProductList products={searchResult} addItem={addItem}/>
+			<Cart products={cart} removeItem={removeItem}/>
 		</Container>
 	);
 };
