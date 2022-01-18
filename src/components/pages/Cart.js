@@ -6,10 +6,11 @@ const Cart = ({ products, removeItem }) => {
     
 
   return (
-    <div>
+    <section>
+      <h3>Shopping Cart</h3>
+    </section>
       
-    
-    </div>
+
   )
 }
 

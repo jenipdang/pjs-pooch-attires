@@ -1,29 +1,53 @@
 import React from 'react';
-import { RiShoppingBagLine } from 'react-icons/ri';
-import { BsPerson } from 'react-icons/bs';
-import { Navbar, Nav, Container } from 'react-bootstrap';
 import '../css/NavBar.css';
 
 const NavBar = () => {
 	return (
-		<Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
-			<Container>
-				<Navbar.Brand href="/">PJ'S POOCH ATTIRES</Navbar.Brand>
-				<Navbar.Toggle aria-controls="responsive-navbar-nav" />
-				<Navbar.Collapse id="responsive-navbar-nav" >
-					<Nav className="me-auto">
-						<Nav.Link href="/">Home</Nav.Link>
-						<Nav.Link href="/products">Products</Nav.Link>
-						<Nav.Link href="/account/signin">
-							<BsPerson />
-						</Nav.Link>
-						<Nav.Link href="/cart">
-							<RiShoppingBagLine />
-						</Nav.Link>
-					</Nav>
-				</Navbar.Collapse>
-			</Container>
-		</Navbar>
+		<nav className="navbar navbar-expand-lg navbar-light bg-white py-3 shadow-sm">
+			<div className="container">
+				<a className="navbar-brand fw-bold fs-4" href="/">
+					PJ'S POOCH ATTIRES
+				</a>
+				<button
+					className="navbar-toggler"
+					type="button"
+					data-bs-toggle="collapse"
+					data-bs-target="#navbarSupportedContent"
+					aria-controls="navbarSupportedContent"
+					aria-expanded="false"
+					aria-label="Toggle navigation"
+				>
+					<span className="navbar-toggler-icon"></span>
+				</button>
+				<div className="collapse navbar-collapse" id="navbarSupportedContent">
+					<ul className="navbar-nav mx-auto mb-2 mb-lg-0">
+						<li className="nav-item">
+							<a className="nav-link active" aria-current="page" href="/">
+								Home
+							</a>
+						</li>
+						<li className="nav-item">
+							<a className="nav-link" href="/products">
+								Products
+							</a>
+						</li>
+						<li className="nav-item">
+							<a className="nav-link" href="/about">
+								About
+							</a>
+						</li>
+					</ul>
+          <div className="buttons">
+            <a href='/account/signin' className="btn btn-outline-dark ms-2">
+              <i className='fa fa-sign-in me-1'></i> Sign In</a>
+            <a href='account/register' className="btn btn-outline-dark ms-2">
+              <i className='fa fa-user-plus me-1'></i> Register</a>
+            <a href='/cart' className="btn btn-outline-dark ms-2">
+              <i className='fa fa-shopping-cart me-1'></i> Cart (0)</a>
+          </div>
+				</div>
+			</div>
+		</nav>
 	);
 };
 
