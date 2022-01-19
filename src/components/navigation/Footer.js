@@ -50,7 +50,7 @@ const Footer = () => {
         <hr />
         <div className="row">
           <p className="col-sm">
-          Terms & Conditions | Privacy Policy | Accessibility |  &copy; {new Date().getFullYear()} PJ'S POOCH ATTIRES | All rights reserved.
+          Terms & Conditions | Privacy Policy | Accessibility |  &copy; {new Date().getFullYear()} PJ'S POOCH ATTIRES <i className='fa fa-paw'></i> | All rights reserved.
             
           </p>
         </div>

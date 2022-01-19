@@ -6,10 +6,12 @@ import Signin from './components/account/Signin';
 import Register from './components/account/Register';
 import Account from './components/account/Account';
 import ProductContainer from './components/products/ProductContainer';
+import ProductDetails from './components/products/ProductDetails';
 import Cart from './components/pages/Cart';
 import About from './components/pages/About';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import '../node_modules/font-awesome/css/font-awesome.min.css'
+
+
 
 
 function App() {
@@ -19,6 +21,7 @@ function App() {
 				<NavBar />
 				<Routes>
 					<Route path="/products" element={<ProductContainer />} />
+					<Route path="/products/:id" element={<ProductDetails />} />
 					<Route path="/cart" element={<Cart />} />
 					<Route path="/" element={<Home />} />
 					<Route path="/about" element={<About />} />
