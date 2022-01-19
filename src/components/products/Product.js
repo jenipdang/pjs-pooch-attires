@@ -24,7 +24,7 @@ const Product = ({ product, handleClick }) => {
 						<span>${amount}</span>
 					</div>
 					<p>
-						{readMore ? description : `${description.substring(0, 50)}...`}
+						{readMore ? description : `${description.substring(0,100)}...`}
 						<button className="btn" onClick={() => setReadMore(!readMore)}>
 							{readMore ? 'Show Less' : 'Read More'}
 						</button>

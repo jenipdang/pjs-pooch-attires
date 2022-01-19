@@ -1,8 +1,7 @@
 import React, {useState } from 'react'
-import Product from '../products/Product'
 
 
-const Cart = ({ products, removeItem }) => {
+const Cart = ({ cartItems, addItem, removeItem }) => {
     
 
   return (

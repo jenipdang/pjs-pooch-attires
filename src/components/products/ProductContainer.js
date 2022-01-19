@@ -3,7 +3,6 @@ import Search from './Search';
 import ProductList from './ProductList';
 import { Container } from 'semantic-ui-react';
 import Loading from '../pages/Loading';
-import Cart from '../pages/Cart';
 import FilterCategory from './FilterByCategory';
 
 
@@ -14,7 +13,7 @@ const ProductContainer = () => {
 	const [products, setProducts] = useState([]);
 	const [search, setSearch] = useState('');
 	const [searchResult, setSearchResult] = useState([]);
-	const [cart, setCart] = useState([])
+	const [shoppingCartItems, setShopingCartItems] = useState([])
 
 	const fetchProducts = async () => {
 		setLoading(true);
@@ -42,11 +41,15 @@ const ProductContainer = () => {
 	}
 
 	const addItem = (product) => {
-		setCart(currentProducts => [...currentProducts, product])
+		const exist = shoppingCartItems.find(ex => ex.id === product.id)
+		if (exist) {
+			setShopingCartItems((...shoppingCartItems, {...product, qty: 1 } : x ))
+		}
+	
 	}
 
 	const removeItem = (productObj) => {
-		setCart((cart) => cart.filter((product) => product.id !== productObj.id))
+		setShopingCartItems((cart) => cart.filter((product) => product.id !== productObj.id))
 	}
 
 	const filterResult = (categoryItem) => {
@@ -80,7 +83,6 @@ const ProductContainer = () => {
 			<Search products={products} term={search} searchKeyword={searchHandler} />
 			<FilterCategory filterResult={filterResult} />
 			<ProductList products={searchResult} addItem={addItem}/>
-			<Cart products={cart} removeItem={removeItem}/>
 		</Container>
 	);
 };

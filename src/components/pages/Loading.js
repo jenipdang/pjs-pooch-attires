@@ -4,7 +4,7 @@ import { Skeleton } from '@mui/material'
 const Loading = () => {
     return (
         <>
-            <h4>Loading</h4>
+            <h4>Loading...</h4>
         </>
     )
 }

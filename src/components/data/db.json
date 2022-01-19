@@ -6,12 +6,8 @@
         "description": "Instant Cool for your dog. Just slide the Royal Stewart Dog Bandana onto your dog's existing collar. They'll be the talk of the park in no time. Available in 2 sizes: Large/Medium and Small.",
         "category": "Bandana",
         "amount": 15.99,
-        "like": 3,
+        "rating": 3.5,
         "care":"Machine washable. Made from Royal Stewart Tartan",
-        "availability": {
-            "medium/large": 2,
-            "small": 4
-        },
         "images": {
             "front": "/images/bandana/Tartan-Red.jpeg",
             "back": "/images/bandana/RED-TARTAN-BANDANA-ON-GOOSE.jpeg"
@@ -23,12 +19,8 @@
         "description": "Instant style for your dog. Just slide the Candy Stripe Dog Bandana onto your dog’s existing collar. Available in 2 sizes: Large/Medium and Small.",
         "category": "Bandana",
         "amount": 15.99,
-        "like": 3,
+        "rating": 4.0,
         "care":"Machine washable. Made from Green Tartan",
-        "availability": {
-            "medium/large": 2,
-            "small": 4
-        },
         "images": {
             "front": "/images/bandana/candy-stripe.jpeg",
             "back": "/images/bandana/RED-STRIPE-MASK-BANDANA.jpeg"
@@ -40,12 +32,8 @@
         "description": "Instant cool for your dog.  Just slide the Green Tartan Dog Bandana onto your dog’s existing collar.  They’ll be the envy of the their buddies in no time. Available in 2 sizes: Large/Medium and Small.",
         "category": "Bandana",
         "amount": 15.99,
-        "like": 4,
+        "rating": 4.0,
         "care":"Machine washable. Made from Green Tartan",
-        "availability": {
-            "medium/large": 2,
-            "small": 4
-        },
         "images": {
             "front": "/images/bandana/Green-Tartan.jpeg",
             "back": "/images/bandana/Green-Tartan.jpeg"
@@ -58,11 +46,7 @@
         "category": "Bandana",
         "care":"Machine washable. Made from printed cotton",
         "amount": 15.99,
-        "like": 4,
-        "availability": {
-            "medium/large": 2,
-            "small": 4
-        },
+        "rating": 4.0,
         "images": {
             "front": "/images/bandana/Red-Star.jpeg",
             "back": "/images/bandana/MINI-STARS.jpeg"
@@ -75,11 +59,7 @@
         "category": "Bandana",
         "care": "Machine washable. Made from printed cotton",
         "amount": 15.99,
-        "like": 4,
-        "availability": {
-            "medium/large": 2,
-            "small": 4
-        },
+        "rating": 5.0,
         "images": {
             "front": "/images/bandana/Red-Gingham.jpeg",
             "back": "/images/bandana/Red-Gingham.jpeg"
@@ -92,11 +72,7 @@
         "category": "Bandana",
         "care": "Machine washable. Made from printed cotton",
         "amount": 15.99,
-        "like": 4,
-        "availability": {
-            "medium/large": 2,
-            "small": 4
-        },
+        "rating": 4.0,
         "images": {
             "front": "/images/bandana/Red-Anchor-Square.jpeg",
             "back": "/images/bandana/RED-ACHOR.jpeg"
@@ -109,11 +85,7 @@
         "category": "Bandana",
         "care": "Machine washable. Made from printed cotton.",
         "amount": 15.99,
-        "like": 4,
-        "availability": {
-            "medium/large": 2,
-            "small": 4
-        },
+        "rating": 4.0,
         "images": {
             "front": "/images/bandana/Cherries.jpeg",
             "back": "/images/bandana/CHERRIES-BANADANA.jpeg"
@@ -126,11 +98,7 @@
         "category": "Bandana",
         "care": "Machine washable. Made from printed cotton.",
         "amount": 15.99,
-        "like": 4,
-        "availability": {
-            "medium/large": 2,
-            "small": 4
-        },
+        "rating": 4.0,
         "images": {
             "front": "/images/bandana/Red-Polkadot.jpeg",
             "back": "/images/bandana/RED-POLKADOTS.jpeg"
@@ -143,11 +111,7 @@
         "category": "Bandana",
         "care": "Machine washable. Made from printed denim.",
         "amount": 15.99,
-        "like": 4,
-        "availability": {
-            "medium/large": 2,
-            "small": 4
-        },
+        "rating": 4.0,
         "images": {
             "front": "/images/bandana/Denim-Stars-Bandana.jpeg",
             "back": "/images/bandana/STARS-BANDANA.jpeg"
@@ -160,11 +124,7 @@
         "category": "Bandana",
         "care": " Machine washable. Made from printed cotton.",
         "amount": 15.99,
-        "like": 4,
-        "availability": {
-            "medium/large": 2,
-            "small": 4
-        },
+        "rating": 3.0,
         "images": {
             "front": "/images/bandana/Green-Comic-Bandana.jpeg",
             "back": "/images/bandana/COMIC-MASK-BANDANA.jpeg"
@@ -177,11 +137,7 @@
         "category": "Transportation",
         "care": "Machine washable. Made from printed cotton.",
         "amount": 15.99,
-        "like": 5,
-        "availability": {
-            "medium/large": 2,
-            "small": 4
-        },
+        "rating": 5.0,
         "images": {
             "front": "/images/bandana/Blue-Unicorns.jpeg",
             "back": "/images/bandana/UNICORNS-BANDANA.jpeg"
@@ -194,11 +150,7 @@
         "category": "Bandana",
         "care": "Machine washable. Made from printed cotton.",
         "amount": 15.99,
-        "like": 0,
-        "availability": {
-            "medium/large": 2,
-            "small": 4
-        },
+        "rating": 3.5,
         "images": {
             "front": "/images/bandana/Navy-Chevron.jpeg",
             "back": "/images/bandana/ZIGZAG-BANDANA.jpeg"
@@ -211,10 +163,7 @@
         "category": "Bow Tie",
         "care": "Machine washable. Made from printed cotton.",
         "amount": 10.99,
-        "like": 0,
-        "availability": {
-            "one-size": 2
-        },
+        "rating": 0,
         "images": {
             "front": "/images/bowties/web-Tartan-Bow-Tie.jpeg",
             "back": "/images/bowties/web-Tartan-Bow-Tie.jpeg"
@@ -227,10 +176,7 @@
         "category": "Bow Tie",
         "care": "Machine washable. Made from printed cotton.",
         "amount": 10.99,
-        "like": 0,
-        "availability": {
-            "one-size": 2
-        },
+        "rating": 0,
         "images": {
             "front": "/images/bowties/Red-Stripe-Bow-Tie.jpeg",
             "back": "/images/bowties/Red-Stripe-Bow-Tie-On-Kobu.jpeg"
@@ -243,10 +189,7 @@
         "category": "Bow Tie",
         "care": "Machine washable. Made from printed cotton.",
         "amount": 10.99,
-        "like": 0,
-        "availability": {
-            "one-size": 2
-        },
+        "rating": 3.5,
         "images": {
             "front": "/images/bowties/Anchor-Bow-Tie.jpeg",
             "back": "/images/bowties/Anchor-Bow-Tie.jpeg"
@@ -259,10 +202,7 @@
         "category": "Bow Tie",
         "care": "Machine washable. Made from printed cotton.",
         "amount": 10.99,
-        "like": 0,
-        "availability": {
-            "one-size": 2
-        },
+        "rating": 5.0,
         "images": {
             "front": "/images/bowties/Chevron-Bow-Tie.jpeg",
             "back": "/images/bowties/Zigzag-Bow-Tie.jpeg"
@@ -275,10 +215,7 @@
         "category": "Bow Tie",
         "care": "Machine washable. Made from printed cotton.",
         "amount": 10.99,
-        "like": 0,
-        "availability": {
-            "one-size": 2
-        },
+        "rating": 0,
         "images": {
             "front": "/images/bowties/Cherry-Bow-Tie.jpeg",
             "back": "/images/bowties/Cherry-Bow-Tie.jpeg"
@@ -291,10 +228,7 @@
         "category": "Bow Tie",
         "care": "Machine washable. Made from printed cotton.",
         "amount": 10.99,
-        "like": 0,
-        "availability": {
-            "one-size": 2
-        },
+        "rating": 0,
         "images": {
             "front": "/images/bowties/Deckchair-Bow-Tie.jpeg",
             "back": "/images/bowties/Deckchair-Bow-Ties.jpeg"
@@ -307,10 +241,7 @@
         "category": "Bow Tie",
         "care": "Machine washable. Made from printed cotton.",
         "amount": 10.99,
-        "like": 0,
-        "availability": {
-            "one-size": 2
-        },
+        "rating": 5.0,
         "images": {
             "front": "/images/bowties/Pirate-Bow-Tie.jpeg",
             "back": "/images/bowties/Pirate-Bow-Tie.jpeg"
@@ -323,10 +254,7 @@
         "category": "Bow Tie",
         "care": "Machine washable. Made from printed cotton.",
         "amount": 10.99,
-        "like": 0,
-        "availability": {
-            "one-size": 2
-        },
+        "rating": 5.0,
         "images": {
             "front": "/images/bowties/Black-Bow-Tie.jpeg",
             "back": "/images/bowties/Black-Bow-Tie.jpeg"
@@ -339,10 +267,7 @@
         "category": "Bow Tie",
         "care": "Machine washable. Made from printed cotton.",
         "amount": 10.99,
-        "like": 0,
-        "availability": {
-            "one-size": 2
-        },
+        "rating": 3.0,
         "images": {
             "front": "/images/bowties/Flamingo-Bow-Tie.jpeg",
             "back": "/images/bowties/Flamingo-Bow-Ties.jpeg"
@@ -355,10 +280,7 @@
         "category": "Bow Tie",
         "care": "Machine washable. Made from printed cotton.",
         "amount": 10.99,
-        "like": 0,
-        "availability": {
-            "one-size": 2
-        },
+        "rating": 3.5,
         "images": {
             "front": "/images/bowties/Red-Deckchair-Bow-Tie.jpeg",
             "back": "/images/bowties/Red-Deckchair-Bow-Tie.jpeg"
@@ -371,11 +293,7 @@
         "category": "Coat",
         "care": "Fully machine washable, but check any additional patches and trim that you sew on for washing instructions.",
         "amount": 40.99,
-        "like": 0,
-        "availability": {
-            "medium": 2,
-            "small": 4
-        },
+        "rating": 3.5,
         "images": {
             "front": "/images/coat/Denim-Dog-Coat.jpeg",
             "back": "/images/coat/Denim-Rainbow-Dog-Coat.jpeg"
@@ -388,11 +306,7 @@
         "category": "Coat",
         "care": "Fully machine washable, but check sew on for washing instructions.",
         "amount": 14.99,
-        "like": 764,
-        "availability": {
-            "medium": 2,
-            "small": 4
-        },
+        "rating": 5.0,
         "images": {
             "front": "/images/coat/Frisco-Boulder-Plaid.jpeg",
             "back": "/images/coat/Frisco-Boulder-Plaids.jpeg"
@@ -405,11 +319,7 @@
         "category": "Coat",
         "care": "Fully machine washable, but check sew on for washing instructions.",
         "amount": 17.99,
-        "like": 216,
-        "availability": {
-            "medium": 2,
-            "small": 4
-        },
+        "rating": 5.0,
         "images": {
             "front": "/images/coat/Frisco-Portland.jpeg",
             "back": "/images/coat/Frisco-Portland-Insulated.jpeg"
@@ -422,7 +332,7 @@
         "category": "Coat",
         "care": "Fully machine washable, but check sew on for washing instructions.",
         "amount": 20.99,
-        "like": 40,
+        "rating": 40,
         "availability": {
             "medium": 2,
             "small": 4
@@ -439,11 +349,7 @@
         "category": "Coat",
         "care": "Fully machine washable, but check sew on for washing instructions.",
         "amount": 13.99,
-        "like": 533,
-        "availability": {
-            "medium": 2,
-            "small": 4
-        },
+        "rating": 5.0,
         "images": {
             "front": "/images/coat/Frisco-raincoat-rainy-day.jpeg",
             "back": "/images/coat/Frisco-Raincoat.jpeg"

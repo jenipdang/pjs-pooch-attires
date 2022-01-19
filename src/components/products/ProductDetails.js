@@ -3,6 +3,7 @@ import { useParams } from 'react-router';
 import Loading from '../pages/Loading';
 import { Card } from 'react-bootstrap';
 import { NavLink } from 'react-router-dom'
+import '../css/Details.css';
 
 const ProductDetails = () => {
 	const { id } = useParams();
