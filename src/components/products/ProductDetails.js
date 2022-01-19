@@ -9,6 +9,7 @@ const ProductDetails = () => {
 	const { id } = useParams();
 	const [product, setProduct] = useState([]);
 	const [loading, setLoading] = useState(false);
+	const [shoppingCartItems, setShopingCartItems] = useState([])
 
 	useEffect(() => {
 		const getProduct = async () => {
@@ -19,6 +20,26 @@ const ProductDetails = () => {
 		};
 		getProduct();
 	}, []);
+
+	const addItem = (product) => {
+		const existing = shoppingCartItems.find(ex => ex.id === product.id)
+		if (existing) {
+			setShopingCartItems(shoppingCartItems.map(ex => ex.id === product.id ? {...existing, qty: existing.qty + 1 } : ex ))
+		}
+		else {
+			setShopingCartItems([...shoppingCartItems, {...product, qty: 1 }])
+		}
+	}
+
+	const removeItem = (product) => { 
+		const existing = shoppingCartItems.find(ex => ex.id === product.id)
+		if (existing) {
+			setShopingCartItems(shoppingCartItems.filter((ex) => ex.id !== product.id))
+		} else {
+			setShopingCartItems(shoppingCartItems.map(ex => ex.id === product.id ? {...existing, qty: existing.qty - 1 } : ex))
+		}
+		
+	}
 
 	const displayProduct = () => {
 		const { name, images, amount, description, care } = product;

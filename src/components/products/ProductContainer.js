@@ -4,6 +4,7 @@ import ProductList from './ProductList';
 import { Container } from 'semantic-ui-react';
 import Loading from '../pages/Loading';
 import FilterCategory from './FilterByCategory';
+import Cart from '../pages/Cart'
 
 
 const url = 'http://localhost:3001/products';
@@ -13,7 +14,7 @@ const ProductContainer = () => {
 	const [products, setProducts] = useState([]);
 	const [search, setSearch] = useState('');
 	const [searchResult, setSearchResult] = useState([]);
-	const [shoppingCartItems, setShopingCartItems] = useState([])
+
 
 	const fetchProducts = async () => {
 		setLoading(true);
@@ -38,18 +39,6 @@ const ProductContainer = () => {
 		return <div>
             <Loading />
         </div>;
-	}
-
-	const addItem = (product) => {
-		const exist = shoppingCartItems.find(ex => ex.id === product.id)
-		if (exist) {
-			setShopingCartItems((...shoppingCartItems, {...product, qty: 1 } : x ))
-		}
-	
-	}
-
-	const removeItem = (productObj) => {
-		setShopingCartItems((cart) => cart.filter((product) => product.id !== productObj.id))
 	}
 
 	const filterResult = (categoryItem) => {
@@ -79,11 +68,13 @@ const ProductContainer = () => {
 	};
 
 	return (
+		<>
 		<Container>
 			<Search products={products} term={search} searchKeyword={searchHandler} />
 			<FilterCategory filterResult={filterResult} />
-			<ProductList products={searchResult} addItem={addItem}/>
+			<ProductList products={searchResult} />
 		</Container>
+		</>
 	);
 };
 
