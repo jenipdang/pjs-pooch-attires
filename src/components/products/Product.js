@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Card } from 'react-bootstrap';
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import '../css/Details.css';
 
 const Product = ({ product, handleClick }) => {
@@ -30,9 +30,9 @@ const Product = ({ product, handleClick }) => {
 						</button>
 					</p>
 					<p>{care}</p>
-					<Link to="/cart" className="cart" onClick={() => handleClick(id)}>
+					<NavLink to={`/products/${product.id}`} className="cart" onClick={() => handleClick(id)}>
 						Add to cart
-					</Link>
+					</NavLink>
 				</div>
 			</div>
 		</Card>
