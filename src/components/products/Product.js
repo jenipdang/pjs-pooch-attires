@@ -20,17 +20,17 @@ const Product = ({ product, handleClick }) => {
 				</div>
 				<div className="box">
 					<div className="row">
-						<h2>{name}</h2>
+						<a className='nav-link' style={{color: "black"}} href={`/products/${id}`}><h2>{name}</h2></a>
 						<span>${amount}</span>
 					</div>
 					<p>
-						{readMore ? description : `${description.substring(0, 100)}...`}
+						{readMore ? description : `${description.substring(0, 50)}...`}
 						<button className="btn" onClick={() => setReadMore(!readMore)}>
 							{readMore ? 'Show Less' : 'Read More'}
 						</button>
 					</p>
 					<p>{care}</p>
-					<NavLink to={`/products/${product.id}`} className="cart" onClick={() => handleClick(id)}>
+					<NavLink to='/cart' className="cart" onClick={() => handleClick(id)}>
 						Add to cart
 					</NavLink>
 				</div>

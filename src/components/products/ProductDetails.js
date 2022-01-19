@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { useParams } from 'react-router';
 import Loading from '../pages/Loading';
 import { Card } from 'react-bootstrap';
+import { NavLink } from 'react-router-dom'
 
 const ProductDetails = () => {
 	const { id } = useParams();
@@ -36,7 +37,12 @@ const ProductDetails = () => {
 		
 						</p>
 						<p>{care}</p>
-
+                        <button className='btn btn-outline-dark px-4 py-2'>
+                            Add to Cart
+                        </button>
+                        <NavLink to='/cart' className='btn btn-dark ms-2 px-3 py-2'>
+                            Go to Cart
+                        </NavLink>
 					</div>
 				</div>
 			</Card>
@@ -45,8 +51,8 @@ const ProductDetails = () => {
 
 	return (
 		<div>
-			<div>
-				<div className="container">
+			<div className="container py-5">
+				<div className="row py-4">
 					{loading ? <Loading /> : displayProduct()}
 				</div>
 			</div>
