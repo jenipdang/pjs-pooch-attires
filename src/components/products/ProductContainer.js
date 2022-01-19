@@ -14,6 +14,7 @@ const ProductContainer = () => {
 	const [products, setProducts] = useState([]);
 	const [search, setSearch] = useState('');
 	const [searchResult, setSearchResult] = useState([]);
+	const [shoppingCartItems, setShopingCartItems] = useState([])
 
 
 	const fetchProducts = async () => {
@@ -67,12 +68,33 @@ const ProductContainer = () => {
         }
 	};
 
+	const addItem = (productItem) => {
+		const existing = shoppingCartItems.find(ex => ex.id === productItem.id)
+		if (existing) {
+			setShopingCartItems(shoppingCartItems.map(ex => ex.id === productItem.id ? {...existing, qty: existing.qty + 1 } : ex ))
+		}
+		else {
+			setShopingCartItems([...shoppingCartItems, {...productItem, qty: 1 }])
+		}
+	}
+
+	const removeItem = (productItem) => { 
+		const existing = shoppingCartItems.find(ex => ex.id === productItem.id)
+		if (existing) {
+			setShopingCartItems(shoppingCartItems.filter((ex) => ex.id !== productItem.id))
+		} else {
+			setShopingCartItems(shoppingCartItems.map(ex => ex.id === productItem.id ? {...existing, qty: existing.qty - 1 } : ex))
+		}
+		
+	}
+
 	return (
 		<>
 		<Container>
 			<Search products={products} term={search} searchKeyword={searchHandler} />
 			<FilterCategory filterResult={filterResult} />
-			<ProductList products={searchResult} />
+			<ProductList products={searchResult} addItem={addItem}/>
+			<Cart shoppingCartItems={shoppingCartItems} addItem={addItem} removeItem={removeItem}/> 
 		</Container>
 		</>
 	);
