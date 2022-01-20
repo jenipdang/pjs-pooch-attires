@@ -1,7 +1,7 @@
 import React, {useState } from 'react'
 
 
-const Cart = ({ cartItems, addItem, removeItem }) => {
+const Cart = ({ shoppingCartItems, addItem, removeItem }) => {
     
 
   return (

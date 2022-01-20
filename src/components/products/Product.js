@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import { Card } from 'react-bootstrap';
-import { NavLink } from 'react-router-dom';
 import '../css/Details.css';
 
 const Product = ({ product, addItem }) => {
@@ -30,7 +29,7 @@ const Product = ({ product, addItem }) => {
 						</button>
 					</p>
 					<p>{care}</p>
-					<button className="btn w-50" onClick={() => addItem(id)}>
+					<button className="btn w-50" onClick={() => addItem(product)}>
 						Add to cart
 					</button>
 				</div>
