@@ -1,10 +1,12 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useContext } from 'react';
 import { useParams } from 'react-router';
 import Loading from '../pages/Loading';
 import { Card } from 'react-bootstrap';
 import '../css/Details.css';
+import { DataContext } from '../data/context';
 
 const ProductDetails = () => {
+	const { addItem } = useContext(DataContext)
 	const { id } = useParams();
 	const [product, setProduct] = useState([]);
 	const [loading, setLoading] = useState(false);
@@ -17,15 +19,15 @@ const ProductDetails = () => {
 			setLoading(false);
 		};
 		getProduct();
-	}, []);
+	}, [id]);
 
 	const displayProduct = () => {
-		const { name, images, amount, description, care } = product;
+		const { id, name, images, amount, description, care } = product;
 		return (
 			<Card>
 				<div className="details">
 					<div className="image">
-						<img src={window.location.orgin + 'images/' } alt={name} />
+						<img src={window.location.orgin + 'images/' + images} alt={name} />
 					</div>
 					<div className="box">
 						<div className="row">
@@ -37,7 +39,7 @@ const ProductDetails = () => {
 		
 						</p>
 						<p>{care}</p>
-                        <button className='btn btn-outline-dark px-4 py-2'>
+                        <button className='btn btn-outline-dark px-4 py-2' onClick={() => addItem(id)}>
                             Add to Cart
                         </button>
 					</div>

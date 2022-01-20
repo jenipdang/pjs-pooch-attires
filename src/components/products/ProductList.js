@@ -3,10 +3,10 @@ import '../css/Products.css'
 import Product from './Product'
 
 
-const ProductList = ({products, addItem, removeItem}) => {
+const ProductList = ({products}) => {
 
     const displayProducts = products.map((product) => (
-        <Product key={product.id} product={product} addItem={addItem} removeItem={removeItem}/>
+        <Product key={product.id} product={product}/>
     ))
 
     return (

@@ -45,7 +45,7 @@ const About = () => {
 					<h4>
 						<small className="text">OUR VISION</small>
 					</h4>
-					<p className="lead">
+					<p className="lead mb-5">
 						Here at PJ'S POOCH ATTIRES, we believe that EVERY dog deserves to
 						live a full and happy life - they deserve to look their best, too!
 						All dogs want to feel loved, and a happy dog makes a happy dog

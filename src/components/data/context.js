@@ -1,9 +1,10 @@
-import React, { useState, useEffect } from 'react';
+import React , { useState }from 'react';
 
 const DataContext = React.createContext()
 
 const DataProvider = ({children}) => {
     const [cart, setCart] = useState([])
+	
 
     const addItem = (product) => {
 		const existing = cart.find(ex => ex.id === product.id)
@@ -24,7 +25,6 @@ const DataProvider = ({children}) => {
 		}
 		
 	}
-
 
   return (
       <div>

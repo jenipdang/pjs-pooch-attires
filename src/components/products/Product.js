@@ -2,10 +2,12 @@ import React, { useState } from 'react';
 import { Card } from 'react-bootstrap';
 import '../css/Details.css';
 
-const Product = ({ product, addItem }) => {
+const Product = ({ product }) => {
 	const { id, name, amount, description, images, care } = product;
 	const [readMore, setReadMore] = useState(false);
 	const [isFront, setIsFront] = useState(true);
+
+
 
 	return (
 		<Card>
@@ -29,7 +31,7 @@ const Product = ({ product, addItem }) => {
 						</button>
 					</p>
 					<p>{care}</p>
-					<button className="btn w-50" onClick={() => addItem(product)}>
+					<button className="btn w-50" >
 						Add to cart
 					</button>
 				</div>
