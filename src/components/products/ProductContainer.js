@@ -74,7 +74,6 @@ const ProductContainer = () => {
 			<Search products={products} term={search} searchKeyword={searchHandler} />
 			<FilterCategory filterResult={filterResult} />
 			<ProductList products={searchResult} />
-			<Cart products={products} />
 		</Container>
 		</>
 	);
