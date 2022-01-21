@@ -54,7 +54,7 @@ const Signin = () => {
       <Wrapper>
         <Title>SIGN IN</Title>
         <Form>
-          <Input type='email' placeholder="username" />
+          <Input type='text' placeholder="username" />
           <Input type='password' placeholder="password" />
           <Button>LOGIN</Button>
           <Link>DO NOT YOU REMEMBER THE PASSWORD?</Link>
