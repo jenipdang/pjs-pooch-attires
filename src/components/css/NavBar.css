@@ -25,8 +25,9 @@ nav ul li a{
     padding: 0 20px;
 }
 nav ul li a:hover{
-    color: black;
+    color: brown;
 }
+
 nav .nav-cart{
     cursor: pointer;
     position: relative;
@@ -47,7 +48,7 @@ header .close{
     cursor: pointer;
     display: none;
 }
-@media (max-width: 650px){
+@media (max-width: 700px){
     header ul{
         position: fixed;
         top:0;
@@ -74,5 +75,6 @@ header .close{
     }
     header ul.toggle{
         left: 0;
+        padding: 10px;
     }
 }

@@ -2,6 +2,7 @@ import React, { useState, useContext } from 'react';
 import '../css/NavBar.css';
 import { Link } from 'react-router-dom';
 import { DataContext } from '../data/context'
+import { FaSignInAlt } from 'react-icons/fa'
 
 const NavBar = () => {
 	const { cart } = useContext(DataContext)
@@ -40,13 +41,13 @@ const NavBar = () => {
 				</ul>
 				<div className="buttons">
 					<Link to="/account/signin" className="btn btn-outline-dark ms-2">
-						<i className="fa fa-sign-in me-1"></i> Sign In
+						<FaSignInAlt />
 					</Link>
 					<Link to="account/register" className="btn btn-outline-dark ms-2">
-						<i className="fa fa-user-plus me-1"></i> 
+						<i className="fa fa-user-plus"></i> 
 					</Link>
 					<Link to="/cart" className="btn btn-outline-dark ms-2">
-						<i className="fa fa-shopping-cart me-1"></i>({cart.length})
+						<i className="fa fa-shopping-cart"></i>({cart.length})
 					</Link>
 				</div>
 			</nav>
