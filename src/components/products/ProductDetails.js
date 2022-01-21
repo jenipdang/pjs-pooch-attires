@@ -14,8 +14,8 @@ const ProductDetails = () => {
 	useEffect(() => {
 		const getProduct = async () => {
 			setLoading(true);
-			const r = await fetch(` http://localhost:3001/products/${id}`);
-			setProduct(await r.json());
+			const response = await fetch(` http://localhost:3001/products/${id}`);
+			setProduct(await response.json());
 			setLoading(false);
 		};
 		getProduct();
@@ -27,7 +27,7 @@ const ProductDetails = () => {
 			<Card>
 				<div className="details">
 					<div className="image">
-						<img src={window.location.orgin + 'images/' + images} alt={name} />
+						<img src={window.location.origin + " "} alt={name} />
 					</div>
 					<div className="box">
 						<div className="row">

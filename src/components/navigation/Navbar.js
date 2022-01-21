@@ -1,9 +1,12 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import '../css/NavBar.css';
 import { NavLink } from 'react-router-dom';
+import { DataContext } from '../data/context'
 
+ 
 
 const NavBar = () => {
+	const { cart } = useContext(DataContext)
 	return (
 		<nav className="navbar navbar-expand-lg navbar-light bg-white py-3 shadow-sm">
 			<div className="container">
@@ -47,7 +50,7 @@ const NavBar = () => {
 							<i className="fa fa-user-plus me-1"></i> Register
 						</NavLink>
 						<NavLink to="/cart" className="btn btn-outline-dark ms-2">
-							<i className="fa fa-shopping-cart me-1"></i> Cart (0)
+							<i className="fa fa-shopping-cart me-1"></i> Cart {cart.length}
 						</NavLink>
 					</div>
 				</div>
