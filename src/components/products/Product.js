@@ -1,11 +1,13 @@
-import React, { useState } from 'react';
+import React, { useContext, useState } from 'react';
 import { Card } from 'react-bootstrap';
 import '../css/Details.css';
+import { DataContext } from '../data/context';
 
 const Product = ({ product }) => {
 	const { id, name, amount, description, images, care } = product;
 	const [readMore, setReadMore] = useState(false);
 	const [isFront, setIsFront] = useState(true);
+	const { addItem } = useContext(DataContext)
 
 
 
@@ -31,7 +33,7 @@ const Product = ({ product }) => {
 						</button>
 					</p>
 					<p>{care}</p>
-					<button className="btn w-50" >
+					<button className="btn w-50" onClick={() => addItem(product)}>
 						Add to cart
 					</button>
 				</div>

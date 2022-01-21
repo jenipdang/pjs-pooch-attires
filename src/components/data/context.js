@@ -1,13 +1,27 @@
 import React , { useState, useEffect }from 'react';
-import { useParams } from 'react-router-dom';
 
 const DataContext = React.createContext()
 
 const DataProvider = ({children}) => {
     const [cart, setCart] = useState([])
 	const [product, setProduct] = useState([])
-	
 
+	
+	const getProduct = async () => {
+		try {
+			const response = await fetch('http://localhost:3001/products/');
+			const data = await response.json();
+			setProduct(data)
+		} catch (error) {
+			alert (error)
+		}
+	}
+	
+	useEffect(() => {
+		getProduct()
+	}, [])
+	
+	
     const addItem = (id) => {
 		const existing = cart.find(ex => ex.id === product.id)
 		if (existing) {
@@ -18,7 +32,7 @@ const DataProvider = ({children}) => {
 		}
 	}
 
-    const removeItem = (product) => { 
+    const removeItem = (id) => { 
 		const existing = cart.find(ex => ex.id === product.id)
 		if (existing) {
 			setCart(cart.filter((ex) => ex.id !== product.id))

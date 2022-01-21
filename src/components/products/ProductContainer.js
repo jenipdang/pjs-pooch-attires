@@ -4,7 +4,7 @@ import ProductList from './ProductList';
 import { Container } from 'semantic-ui-react';
 import Loading from '../pages/Loading';
 import FilterCategory from './FilterByCategory';
-// import Cart from '../pages/Cart'
+import Cart from '../pages/Cart'
 // import { DataContext } from '../data/context';
 
 
@@ -74,6 +74,7 @@ const ProductContainer = () => {
 			<Search products={products} term={search} searchKeyword={searchHandler} />
 			<FilterCategory filterResult={filterResult} />
 			<ProductList products={searchResult} />
+			<Cart products={products} />
 		</Container>
 		</>
 	);
