@@ -25,7 +25,7 @@ nav ul li a{
     padding: 0 15px;
 }
 nav ul li a:hover{
-    color: lightseagreen;
+    color: black;
 }
 nav .nav-cart{
     cursor: pointer;
