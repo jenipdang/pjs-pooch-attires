@@ -40,30 +40,9 @@ const Cart = () => {
 			))}
 			<div className="total">
 				{cart.length !== 0 && <h3>Total: ${itemsAmount}</h3>}
+        <button className='btn btn btn-dark'>Continue Shopping</button>
 			</div>
-			{/* <div className='total'>
-        {
-          cart.length !== 0 && (
-            <>
-            <Link to='/payment'>Payment</Link>
-            <div> 
-            <div className='row'>
-              <div className='col-2'><h2>Item Price: ${itemsAmount.toFixed(2)}</h2></div>
-            </div>
-            <div className='row'>
-              <div className='col-2'><h3>Tax Price: ${itemsAmount.toFixed(2)}</h3></div>
-            </div>
-            <div className='row'>
-              <div className='col-2'><h3>Shipping Price: ${itemsAmount.toFixed(2)}</h3></div>
-            </div>
-            <div className='row'>
-              <div className='col-2'><h3>Total: ${totalAmount.toFixed(2)}</h3></div>
-            </div>
-            </div>
-            </>
-          )
-        }
-      </div> */}
+			
 		</section>
 	);
 };

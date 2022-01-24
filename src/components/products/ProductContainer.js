@@ -4,8 +4,6 @@ import ProductList from './ProductList';
 import { Container } from 'semantic-ui-react';
 import Loading from '../pages/Loading';
 import FilterCategory from './FilterByCategory';
-import Cart from '../pages/Cart'
-import { DataContext } from '../data/context';
 
 
 const ProductContainer = () => {
