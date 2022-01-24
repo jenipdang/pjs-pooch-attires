@@ -9,6 +9,7 @@ import ProductContainer from './components/products/ProductContainer';
 import ProductDetails from './components/products/ProductDetails';
 import Cart from './components/pages/Cart';
 import About from './components/pages/About';
+import Signout from './components/account/Profile';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
 
@@ -24,6 +25,7 @@ function App() {
 					<Route path="/" element={<Home />} />
 					<Route path="/about" element={<About />} />
 					<Route path="/account/signin" element={<Signin />} />
+					<Route path="/account/profile" element={<Signout />} />
 					<Route path="/account/register" element={<Register />} />
 					<Route path="/account" element={<Account />} />
 				</Routes>
