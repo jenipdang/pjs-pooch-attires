@@ -9,15 +9,21 @@ const Account = () => {
 	const [ user, setUser ] = useState([])
 
 	useEffect(() => {
-
+		fetch('http://localhost:3001/users')
+		.then (r => r.json())
+		.then ((userData) => {
+			setUser(userData)
+		}).catch((err) =>
+		alert(err))
 	}, [])
 
-	const handleAddNewUser = (newUser) => {
-		return setUser([...user, newUser])
+	const handleAddNewUser = (addNewUser) => {
+		return setUser([...user, addNewUser])
 	}
+	
 	return (
 		<div>
-				<Signin />
+				<Signin user={user}/>
 				<Register handleAddNewUser={handleAddNewUser}/>
 		</div>
 	);

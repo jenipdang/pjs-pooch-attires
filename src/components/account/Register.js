@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 import { useState } from 'react';
-
+// import { useHistory } from 'react-router-dom'
 
 const Container = styled.div`
 	width: 100vw;
@@ -47,14 +47,13 @@ const Button = styled.button`
 	cursor: pointer;
 `;
 
-const Register = ({handleAddNewUser}) => {
+const Register = ({ handleAddNewUser }) => {
 	const [firstName, setFirstName] = useState('');
 	const [lastName, setLastName] = useState('');
 	const [username, setUsername] = useState('');
 	const [email, setEmail] = useState('');
 	const [password, setPassword] = useState('');
-	const [confirmPassword, setConfirmPassword] = useState('');
-
+  // const history = useHistory()
 
 	const handleSubmit = (e) => {
 		e.preventDefaul();
@@ -63,33 +62,40 @@ const Register = ({handleAddNewUser}) => {
 			lastName.trim() === '' ||
 			username.trim() === '' ||
 			email.trim() === '' ||
-			password.trim() === '' ||
-			confirmPassword.trim() === ''
+			password.trim() === ''
 		) {
 			alert('Please Fill Out All Fields');
 			return null;
 		}
 
-		const newUser = { firstName, lastName, username, email, password }
+		const newUser = {
+			firstName,
+			lastName,
+			username,
+			email,
+			password
+		};
 
 		fetch('http://localhost:3001/users', {
-      method: 'POST',
-      headers: {"Content-type": "application/json"},
-      body: JSON.stringify(newUser)
-    })
-    .then((r) => r.json())
-    .then(handleAddNewUser)
-    .catch((err) => {
-      console.err("Error:", err)
-    })
+			method: 'POST',
+			headers: { 
+        'Content-type': 'application/json',
+        'Accept': 'application/json'
+      },
+			body: JSON.stringify(newUser),
+		})
+			.then((r) => r.json())
+			.then(handleAddNewUser)
+			.catch((err) => {
+				console.err('Error:', err);
+			});
 
-    setFirstName("")
-    setLastName("")
-    setUsername("")
-    setEmail("")
-    setPassword("")
-    setConfirmPassword("")
-
+		setFirstName('');
+		setLastName('');
+		setUsername('');
+		setEmail('');
+		setPassword('');
+    // history.push('/products')
 	};
 
 	return (
@@ -103,6 +109,7 @@ const Register = ({handleAddNewUser}) => {
 						value={firstName}
 						lable="firstName"
 						placeholder="First Name"
+						name="firstName"
 					/>
 					<Input
 						type="text"
@@ -110,6 +117,7 @@ const Register = ({handleAddNewUser}) => {
 						value={lastName}
 						lable="lastName"
 						placeholder="Last Name"
+						name="lastName"
 					/>
 					<Input
 						type="text"
@@ -117,6 +125,7 @@ const Register = ({handleAddNewUser}) => {
 						value={username}
 						lable="username"
 						placeholder="username"
+						name="username"
 					/>
 					<Input
 						type="emial"
@@ -124,6 +133,7 @@ const Register = ({handleAddNewUser}) => {
 						value={email}
 						lable="email"
 						placeholder="email"
+						name="email"
 					/>
 					<Input
 						type="password"
@@ -131,13 +141,7 @@ const Register = ({handleAddNewUser}) => {
 						value={password}
 						lable="password"
 						placeholder="password"
-					/>
-					<Input
-						type="password"
-						onChange={(e) => setConfirmPassword(e.target.value)}
-						value={confirmPassword}
-						lable="confirmPassword"
-						placeholder="confirm password"
+						name="password"
 					/>
 					<Agreement>
 						By creating an account, I consent to the processing of my personal
