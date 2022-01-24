@@ -3,10 +3,10 @@ import { useParams } from 'react-router';
 import Loading from '../pages/Loading';
 import { Card } from 'react-bootstrap';
 import '../css/Details.css';
-import { DataContext } from '../data/context';
+import { useGlobalContext } from '../data/context';
 
 const ProductDetails = () => {
-	const { addItem } = useContext(DataContext);
+	const { addItem } = useGlobalContext()
 	const { id } = useParams();
 	const [product, setProduct] = useState([]);
 	const [loading, setLoading] = useState(false);

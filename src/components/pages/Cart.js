@@ -1,11 +1,11 @@
-import React, { useContext } from 'react';
-import { DataContext } from '../data/context';
+import React from 'react';
+import { useGlobalContext } from '../data/context';
 import '../css/Cart.css';
 import '../css/Details.css';
 import { useNavigate } from 'react-router-dom';
 
 const Cart = () => {
-	const { setCart, cart, addItem, removeItem } = useContext(DataContext);
+	const { setCart, cart, addItem, removeItem } = useGlobalContext();
 	const itemsAmount = cart.reduce((a, c) => a + c.amount * c.qty, 0);
 
 	let navigate = useNavigate();
