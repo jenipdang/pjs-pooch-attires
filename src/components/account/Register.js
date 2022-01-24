@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 import { useState } from 'react';
+// import { useForm } from 'react';
 // import { useHistory } from 'react-router-dom'
 
 const Container = styled.div`
@@ -47,55 +48,53 @@ const Button = styled.button`
 	cursor: pointer;
 `;
 
-const Register = ({ handleAddNewUser }) => {
+const Register = () => {
 	const [firstName, setFirstName] = useState('');
 	const [lastName, setLastName] = useState('');
 	const [username, setUsername] = useState('');
 	const [email, setEmail] = useState('');
 	const [password, setPassword] = useState('');
-  // const history = useHistory()
+	// const history = useHistory()
 
 	const handleSubmit = (e) => {
 		e.preventDefaul();
-		if (
-			firstName.trim() === '' ||
-			lastName.trim() === '' ||
-			username.trim() === '' ||
-			email.trim() === '' ||
-			password.trim() === ''
-		) {
-			alert('Please Fill Out All Fields');
+		const inputs = [firstName, lastName, username, email, password];
+		const bool = inputs.some((element) => element.trim() === '');
+		if (!bool) {
+			alert('You must fill out all the input fields!');
 			return null;
-		}
+		} else {
+			const newUser = { firstName, lastName, username, email, password };
 
-		const newUser = {
-			firstName,
-			lastName,
-			username,
-			email,
-			password
-		};
-
-		fetch('http://localhost:3001/users', {
-			method: 'POST',
-			headers: { 
-        'Content-type': 'application/json',
-        'Accept': 'application/json'
-      },
-			body: JSON.stringify(newUser),
-		})
-			.then((r) => r.json())
-			.then(handleAddNewUser)
-			.catch((err) => {
-				console.err('Error:', err);
+			fetch('http://localhost:3001/users', {
+				method: 'POST',
+				headers: {
+					'Content-type': 'application/json',
+				},
+				body: JSON.stringify(newUser),
 			});
 
-		setFirstName('');
-		setLastName('');
-		setUsername('');
-		setEmail('');
-		setPassword('');
-    // history.push('/products')
+			setFirstName('');
+			setLastName('');
+			setUsername('');
+			setEmail('');
+			setPassword('');
+			// history.push('/products')
+		}
+
+		// fetch('http://localhost:3001/users', {
+		// 	method: 'POST',
+		// 	headers: {
+		// 		'Content-type': 'application/json',
+		// 		Accept: 'application/json',
+		// 	},
+		// 	body: JSON.stringify(newUser),
+		// })
+		// 	.then((r) => r.json())
+		// 	.then(handleAddNewUser)
+		// 	.catch((err) => {
+		// 		console.err('Error:', err);
+		// 	});
 	};
 
 	return (
@@ -147,7 +146,9 @@ const Register = ({ handleAddNewUser }) => {
 						By creating an account, I consent to the processing of my personal
 						data in accordance with the <b>PRIVACY POLICY</b>
 					</Agreement>
-					<Button>CREATE</Button>
+					<Button type="submit" value="Create">
+						CREATE
+					</Button>
 				</Form>
 			</Wrapper>
 		</Container>
