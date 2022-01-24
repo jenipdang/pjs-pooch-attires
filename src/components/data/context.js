@@ -46,9 +46,13 @@ const DataProvider = ({children}) => {
 		setIsModalOpen(true)
 	}
 
+	const closeModal = () => {
+		setIsModalOpen(false)
+	}
+
   return (
       <div>
-          <DataContext.Provider value={{setCart, cart, addItem, removeItem, isModalOpen, openModal}}>
+          <DataContext.Provider value={{setCart, cart, addItem, removeItem, isModalOpen, openModal, closeModal}}>
               {children}
           </DataContext.Provider>
       </div>
