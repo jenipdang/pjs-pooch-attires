@@ -1,10 +1,11 @@
-import React , { useState, useEffect }from 'react';
+import React , { useState, useEffect, useContext }from 'react';
 
 const DataContext = React.createContext()
 
 const DataProvider = ({children}) => {
     const [cart, setCart] = useState([])
 	const [product, setProduct] = useState([])
+	const [isModelOpen, setIsModelOpen] = useState(false)
 
 	
 	const getProduct = async (id) => {
@@ -41,13 +42,21 @@ const DataProvider = ({children}) => {
 		}
 	}
 
+	const openModel = () => {
+		setIsModelOpen(true)
+	}
+
   return (
       <div>
-          <DataContext.Provider value={{setCart, cart, addItem, removeItem}}>
+          <DataContext.Provider value={{setCart, cart, addItem, removeItem, isModelOpen, openModel}}>
               {children}
           </DataContext.Provider>
       </div>
   )
 };
 
+export const useGlobalContext = () =>  {
+	return useContext(DataContext)
+}
+ 
 export {DataProvider, DataContext};
