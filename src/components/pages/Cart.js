@@ -3,26 +3,20 @@ import { DataContext } from '../data/context';
 import '../css/Cart.css';
 import '../css/Details.css';
 import { useNavigate } from 'react-router-dom';
-// import { useHistory } from 'react-router-dom' replace with useNavigate for v6
 
 const Cart = () => {
 	const { cart, addItem, removeItem } = useContext(DataContext);
 	const itemsAmount = cart.reduce((a, c) => a + c.amount * c.qty, 0);
 
-  // let history = useHistory()
+	let navigate = useNavigate();
 
-  // const continueShopping = () => {
-  //   history.push('/products')
-  // }
+	const handleClick = () => {
+		navigate('/products');
+	};
 
-  let navigate = useNavigate()
-
-  const handleClick = () => {
-    navigate('/products')
-  }
- 	// const taxAmount = itemsAmount * 0.10
-	// const shippingAmount = itemsAmount > 100 ? 0 : 60
-	// const totalAmount = itemsAmount + taxAmount + shippingAmount
+	const handleCheckout = () => {
+		alert('Thank you for shopping with us! Your order is confirmed.');
+	};
 
 	return (
 		<section className="container">
@@ -39,29 +33,39 @@ const Cart = () => {
 					<div className="box">
 						<div className="row">
 							<h2>{item.name}</h2>
-							<span>
-								${item.amount} 
-							</span>
+							<span>${item.amount}</span>
 						</div>
 						<p>{item.description}</p>
 						<div className="amount">
-							<button className="count" onClick={() => removeItem(item)}> - </button>
-              <span>{item.qty}</span>
-							<button className="count" onClick={() => addItem(item)}> + </button>
+							<button className="count" onClick={() => removeItem(item)}>
+								{' '}
+								-{' '}
+							</button>
+							<span>{item.qty}</span>
+							<button className="count" onClick={() => addItem(item)}>
+								{' '}
+								+{' '}
+							</button>
 						</div>
 					</div>
 				</div>
 			))}
 			<div className="total">
 				{cart.length !== 0 && (
-        <>
-        <h3>Total: ${itemsAmount}</h3>
-        <button className='btn btn-outline-dark mb-4'>CHECK OUT</button>
-        <button className='btn btn-outline-dark mb-4'onClick={handleClick}>CONTINUE SHOPPING</button>
-        </>
-        )}
+					<>
+						<h3>Total: ${itemsAmount}</h3>
+						<button
+							className="btn btn-outline-dark mb-4"
+							onClick={handleCheckout}
+						>
+							CHECK OUT
+						</button>
+						<button className="btn btn-outline-dark mb-4" onClick={handleClick}>
+							CONTINUE SHOPPING
+						</button>
+					</>
+				)}
 			</div>
-			
 		</section>
 	);
 };
