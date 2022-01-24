@@ -5,7 +5,7 @@ import '../css/Details.css';
 import { useNavigate } from 'react-router-dom';
 
 const Cart = () => {
-	const { cart, addItem, removeItem } = useContext(DataContext);
+	const { setCart, cart, addItem, removeItem } = useContext(DataContext);
 	const itemsAmount = cart.reduce((a, c) => a + c.amount * c.qty, 0);
 
 	let navigate = useNavigate();
@@ -16,6 +16,7 @@ const Cart = () => {
 
 	const handleCheckout = () => {
 		alert('Thank you for shopping with us! Your order is confirmed.');
+		setCart([])
 	};
 
 	return (
