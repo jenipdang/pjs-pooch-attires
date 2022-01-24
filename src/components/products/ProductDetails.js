@@ -5,6 +5,7 @@ import { Card } from 'react-bootstrap';
 import '../css/Details.css';
 import { DataContext } from '../data/context';
 
+
 const ProductDetails = () => {
 	const { addItem } = useContext(DataContext)
 	const { id } = useParams();

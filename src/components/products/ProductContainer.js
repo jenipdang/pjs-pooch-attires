@@ -5,10 +5,8 @@ import { Container } from 'semantic-ui-react';
 import Loading from '../pages/Loading';
 import FilterCategory from './FilterByCategory';
 import Cart from '../pages/Cart'
-// import { DataContext } from '../data/context';
+import { DataContext } from '../data/context';
 
-
-const url = 'http://localhost:3001/products';
 
 const ProductContainer = () => {
 	const [loading, setLoading] = useState(true);
@@ -21,7 +19,7 @@ const ProductContainer = () => {
 		setLoading(true);
 
 		try {
-			const response = await fetch(url);
+			const response = await fetch('http://localhost:3001/products');
 			const data = await response.json();
 			setLoading(false);
 			setProducts(data);

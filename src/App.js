@@ -12,8 +12,6 @@ import About from './components/pages/About';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
 
-
-
 function App() {
 	return (
 		<BrowserRouter>

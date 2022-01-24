@@ -3,12 +3,12 @@ import { Card } from 'react-bootstrap';
 import '../css/Details.css';
 import { DataContext } from '../data/context';
 
+
 const Product = ({ product }) => {
 	const { id, name, amount, description, images, care } = product;
 	const [readMore, setReadMore] = useState(false);
 	const [isFront, setIsFront] = useState(true);
 	const { addItem } = useContext(DataContext)
-
 
 
 	return (

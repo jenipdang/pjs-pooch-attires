@@ -4,7 +4,6 @@ import { Link } from 'react-router-dom'
 import '../css/Cart.css'
 import '../css/Details.css'
 
-
 const Cart = () => {
     
   const { cart, addItem, removeItem } = useContext(DataContext)
@@ -20,18 +19,18 @@ const Cart = () => {
         {cart.length === 0 && <h2 style={{textAlign: 'center'}}>Your Shopping Cart Is Empty</h2>}
       </div>
       {
-        cart.map((product, index) => (
+        cart.map((item, index) => (
           <div className='details cart' key={index}>
-            <img src={product.images} alt={product.name} />
+            <img src={item.images} alt={item.name} />
             <div className='box'>
               <div className='row'>
-                <h2>{product.name}</h2>
-                <span>${product.amount} x {product.qty}</span>
+                <h2>{item.name}</h2>
+                <span>${item.amount} x {item.qty}</span>
               </div>
-              <p>{product.description}</p>
+              <p>{item.description}</p>
               <div className='amount'>
-                <button className='count' onClick={() => removeItem(product.index)}> - </button>
-                <button className='count' onClick={() => addItem(product.index)}> + </button>
+                <button className='count' onClick={() => removeItem(item.index)}> - </button>
+                <button className='count' onClick={() => addItem(item.index)}> + </button>
               </div>
             </div>
           </div>
@@ -47,10 +46,10 @@ const Cart = () => {
               <div className='col-2'><h2>Item Price: ${itemsAmount.toFixed(2)}</h2></div>
             </div>
             <div className='row'>
-              <div className='col-2'><h3>TAx Price: ${itemsAmount.toFixed(2)}</h3></div>
+              <div className='col-2'><h3>Tax Price: ${itemsAmount.toFixed(2)}</h3></div>
             </div>
             <div className='row'>
-              <div className='col-2'><h3>Shippig Price: ${itemsAmount.toFixed(2)}</h3></div>
+              <div className='col-2'><h3>Shipping Price: ${itemsAmount.toFixed(2)}</h3></div>
             </div>
             <div className='row'>
               <div className='col-2'><h3>Total: ${totalAmount.toFixed(2)}</h3></div>
