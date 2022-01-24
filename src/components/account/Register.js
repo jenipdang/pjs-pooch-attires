@@ -1,6 +1,5 @@
 import styled from 'styled-components';
 import { useState } from 'react';
-// import { useHistory } from 'react-router-dom'
 
 const Container = styled.div`
 	width: 100vw;
@@ -47,60 +46,46 @@ const Button = styled.button`
 	cursor: pointer;
 `;
 
-const Register = () => {
+const Register = ({handleAddNewUser}) => {
 	const [firstName, setFirstName] = useState('');
 	const [lastName, setLastName] = useState('');
 	const [username, setUsername] = useState('');
 	const [email, setEmail] = useState('');
 	const [password, setPassword] = useState('');
-	// const history = useHistory()
 
-	const handleSubmit = (e) => {
-		e.preventDefaul();
-		const inputs = [firstName, lastName, username, email, password];
-		const bool = inputs.some((element) => element.trim() === '');
-		if (!bool) {
-			alert('You must fill out all the input fields!');
-			return null;
-		} else {
-			const newUser = { firstName, lastName, username, email, password };
 
-			fetch('http://localhost:3001/users', {
-				method: 'POST',
-				headers: {
-					'Content-type': 'application/json',
-				},
-				body: JSON.stringify(newUser),
-			});
+	// const handleSubmit = (e) => {
+	// 	e.preventDefaul();
+	// 	const inputs = [firstName, lastName, username, email, password];
+	// 	const bool = inputs.some((element) => element.trim() === '');
+	// 	if (!bool) {
+	// 		alert('You must fill out all the input fields!');
+	// 		return null;
+	// 	} else {
+			// const newUser = { firstName, lastName, username, email, password };
 
-			setFirstName('');
-			setLastName('');
-			setUsername('');
-			setEmail('');
-			setPassword('');
-			// history.push('/products')
-		}
+			// fetch('http://localhost:3001/users', {
+			// 	method: 'POST',
+			// 	headers: {
+			// 		'Content-type': 'application/json',
+			// 	},
+			// 	body: JSON.stringify(newUser),
+			// });
 
-		// fetch('http://localhost:3001/users', {
-		// 	method: 'POST',
-		// 	headers: {
-		// 		'Content-type': 'application/json',
-		// 		Accept: 'application/json',
-		// 	},
-		// 	body: JSON.stringify(newUser),
-		// })
-		// 	.then((r) => r.json())
-		// 	.then(handleAddNewUser)
-		// 	.catch((err) => {
-		// 		console.err('Error:', err);
-		// 	});
-	};
+		// 	setFirstName('');
+		// 	setLastName('');
+		// 	setUsername('');
+		// 	setEmail('');
+		// 	setPassword('');
+	
+		// }
+	// };
 
 	return (
 		<Container>
 			<Wrapper>
 				<Title>CREATE AN ACCOUNT</Title>
-				<Form onSubmit={handleSubmit}>
+				<Form onSubmit={handleAddNewUser}>
 					<Input
 						type="text"
 						onChange={(e) => setFirstName(e.target.value)}

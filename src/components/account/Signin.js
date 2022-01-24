@@ -50,7 +50,7 @@ const Link = styled.a`
 	cursor: pointer;
 `;
 
-const Signin = (props) => {
+const Signin = () => {
 	const [username, setUsername] = useState('');
 	const [password, setPassword] = useState('');
 	const [error, setError] = useState(null);

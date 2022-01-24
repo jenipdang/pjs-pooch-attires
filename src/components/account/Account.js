@@ -6,24 +6,29 @@ import Register from './Register';
 
 
 const Account = () => {
-	const [ user, setUser ] = useState([])
+	const [ data, setData ] = useState({ users: [] })
 
-	useEffect(() => {
-		fetch('http://localhost:3001/users')
-		.then (r => r.json())
-		.then ((userData) => {
-			setUser(userData)
-		}).catch((err) =>
-		alert(err))
-	}, [])
+	const handleAddNewUser = (user) => {
+		let users = data["users"]
 
-	const handleAddNewUser = (addNewUser) => {
-		return setUser([...user, addNewUser])
+		fetch('http://localhost:3001/users', {
+			method: "POST",
+			headers: {
+				"Content-type": "application/json",
+			},
+			body: JSON.stringify(user),
+		})
+		.then((r) => r.json())
+		.then((data) => {
+			console.log(data)
+			users.push(data)
+			setData({ users: users })
+		})	
 	}
 	
 	return (
 		<div>
-				<Signin user={user}/>
+				<Signin />
 				<Register handleAddNewUser={handleAddNewUser}/>
 		</div>
 	);
