@@ -1,9 +1,13 @@
 # PJ's Pooch Attires
 
 ## Description 
+Have you ever buy something for your dog according to the size chart but later found out that it does not fit becausae not all items small/medium/large are the same? 
 
+PJ's Pooch Attires is an online dog clothing store has everything you need for your pooch! We are pet people, pet lovers, and pet parents. When you shop with us, you can feel confident knowing that we wouldn't sell anything that we wouldn't give to our own pets. 
 
-# Getting Started with Create React App
+This application was built with React, JavaScript, Boostrap, Semanitc UI, and CSS.
+
+## Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
