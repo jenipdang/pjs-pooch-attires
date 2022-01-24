@@ -5,9 +5,8 @@ import { Card } from 'react-bootstrap';
 import '../css/Details.css';
 import { DataContext } from '../data/context';
 
-
 const ProductDetails = () => {
-	const { addItem } = useContext(DataContext)
+	const { addItem } = useContext(DataContext);
 	const { id } = useParams();
 	const [product, setProduct] = useState([]);
 	const [loading, setLoading] = useState(false);
@@ -26,7 +25,7 @@ const ProductDetails = () => {
 		const { id, name, images, amount, description, care } = product;
 		return (
 			<Card>
-				<div className="details">
+				<div className="details" key={id}>
 					<div className="image">
 						<img src={window.location.origin + '/images/'} alt={name} />
 					</div>
@@ -35,14 +34,14 @@ const ProductDetails = () => {
 							<h2>{name}</h2>
 							<span>${amount}</span>
 						</div>
-						<p>
-							{description}
-		
-						</p>
+						<p>{description}</p>
 						<p>{care}</p>
-                        <button className='btn btn-outline-dark px-4 py-2' onClick={() => addItem(product)}>
-                            Add to Cart
-                        </button>
+						<button
+							className="btn btn-outline-dark px-4 py-2"
+							onClick={() => addItem(product)}
+						>
+							Add to Cart
+						</button>
 					</div>
 				</div>
 			</Card>
