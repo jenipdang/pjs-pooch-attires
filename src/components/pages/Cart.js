@@ -2,11 +2,25 @@ import React, { useContext } from 'react';
 import { DataContext } from '../data/context';
 import '../css/Cart.css';
 import '../css/Details.css';
+import { useNavigate } from 'react-router-dom';
+// import { useHistory } from 'react-router-dom' replace with useNavigate for v6
 
 const Cart = () => {
 	const { cart, addItem, removeItem } = useContext(DataContext);
 	const itemsAmount = cart.reduce((a, c) => a + c.amount * c.qty, 0);
-	// const taxAmount = itemsAmount * 0.10
+
+  // let history = useHistory()
+
+  // const continueShopping = () => {
+  //   history.push('/products')
+  // }
+
+  let navigate = useNavigate()
+
+  const handleClick = () => {
+    navigate('/products')
+  }
+ 	// const taxAmount = itemsAmount * 0.10
 	// const shippingAmount = itemsAmount > 100 ? 0 : 60
 	// const totalAmount = itemsAmount + taxAmount + shippingAmount
 
@@ -21,7 +35,7 @@ const Cart = () => {
 			</div>
 			{cart.map((item, index) => (
 				<div className="details cart" key={index}>
-					<img src={item.images} alt={item.name} />
+					<img src={item.images.front} alt={item.name} />
 					<div className="box">
 						<div className="row">
 							<h2>{item.name}</h2>
@@ -39,8 +53,13 @@ const Cart = () => {
 				</div>
 			))}
 			<div className="total">
-				{cart.length !== 0 && <h3>Total: ${itemsAmount}</h3>}
-        <button className='btn btn btn-dark'>Continue Shopping</button>
+				{cart.length !== 0 && (
+        <>
+        <h3>Total: ${itemsAmount}</h3>
+        <button className='btn btn-outline-dark mb-4'>CHECK OUT</button>
+        <button className='btn btn-outline-dark mb-4'onClick={handleClick}>CONTINUE SHOPPING</button>
+        </>
+        )}
 			</div>
 			
 		</section>
