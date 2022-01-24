@@ -4,6 +4,7 @@ import '../css/Cart.css';
 import '../css/Details.css';
 import { useNavigate } from 'react-router-dom';
 
+
 const Cart = () => {
 	const { setCart, cart, addItem, removeItem } = useGlobalContext();
 	const itemsAmount = cart.reduce((a, c) => a + c.amount * c.qty, 0);
@@ -15,7 +16,7 @@ const Cart = () => {
 	};
 
 	const handleCheckout = () => {
-		alert('Thank you for shopping with us! Your order is confirmed.');
+		alert('Order Confirmed. Thank you for shopping with us!')
 		setCart([])
 	};
 

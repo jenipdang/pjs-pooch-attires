@@ -5,7 +5,6 @@ const DataContext = React.createContext()
 const DataProvider = ({children}) => {
     const [cart, setCart] = useState([])
 	const [product, setProduct] = useState([])
-	const [isModalOpen, setIsModalOpen] = useState(false)
 
 	
 	const getProduct = async (id) => {
@@ -42,17 +41,10 @@ const DataProvider = ({children}) => {
 		}
 	}
 
-	const openModal = () => {
-		setIsModalOpen(true)
-	}
-
-	const closeModal = () => {
-		setIsModalOpen(false)
-	}
 
   return (
       <div>
-          <DataContext.Provider value={{setCart, cart, addItem, removeItem, isModalOpen, openModal, closeModal}}>
+          <DataContext.Provider value={{setCart, cart, addItem, removeItem}}>
               {children}
           </DataContext.Provider>
       </div>
