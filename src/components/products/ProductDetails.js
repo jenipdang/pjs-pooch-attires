@@ -27,7 +27,7 @@ const ProductDetails = () => {
 			<Card>
 				<div className="details">
 					<div className="image">
-						<img src={window.location.origin + " "} alt={name} />
+						<img src={window.location.origin+ ''} alt={name} />
 					</div>
 					<div className="box">
 						<div className="row">

@@ -355,6 +355,16 @@
             "back": "/images/coat/Frisco-Raincoat.jpeg"
         }
       }
-    ]
+    ],
     
+    "users": [
+      {
+        "id": 1,
+        "firstName": "jeni",
+        "lastName": "dang",
+        "username": "jdang1234",
+        "email": "jenipdang@yahoo.com",
+        "password": "1234567jd"
+      }
+    ]
   }
