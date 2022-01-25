@@ -20,11 +20,11 @@ const NavBar = () => {
 			<div className="logo">
 				<h1>
 					<Link to="/">
-						<i className="fa fa-paw" style={{marginLeft: "20px"}}> PJ'S POOCH ATTIRES</i>
+						<i className="fa fa-paw" style={{marginLeft: "30px"}}> PJ'S POOCH ATTIRES</i>
 					</Link>
 				</h1>
 			</div>
-			<nav>
+			<nav style={{marginRight: "30px"}}>
 				<ul className={isToggle ? "toggle" : ""}>
 					<li>
 						<Link to="/">Home</Link>

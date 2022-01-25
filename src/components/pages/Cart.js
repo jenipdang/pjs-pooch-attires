@@ -29,6 +29,8 @@ const Cart = () => {
 					</h2>
 				)}
 			</div>
+			<div>
+				<h1 className='text' style={{ textAlign: 'center'}}>Your Shopping Cart</h1>
 			{cart.map((item, index) => (
 				<div className="details cart" key={index}>
 					<img src={item.images.front} alt={item.name} />
@@ -55,7 +57,7 @@ const Cart = () => {
 			<div className="total">
 				{cart.length !== 0 && (
 					<>
-						<h3>Total: ${itemsAmount}</h3>
+						<h3>Total: ${itemsAmount.toFixed(2)}</h3>
 						<button
 							className="btn btn-outline-dark mb-4"
 							onClick={handleCheckout}
@@ -67,6 +69,7 @@ const Cart = () => {
 						</button>
 					</>
 				)}
+			</div>
 			</div>
 		</section>
 	);
