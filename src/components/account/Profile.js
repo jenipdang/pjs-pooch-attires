@@ -2,10 +2,10 @@ import React from 'react';
 import { useNavigate } from 'react-router-dom';
 
 const Profile = ({ users }) => {
-	let navigate = useNavigate();
+	let history = useNavigate();
 
 	const handleSignout = () => {
-		navigate('/account/signin');
+		history('/account/signin');
 	};
 	return (
 		<div className="container">

@@ -87,33 +87,6 @@ const Register = () => {
 		history('/profile')
 
 	};
-	// const handleSubmit = (e) => {
-	// 	e.preventDefaul();
-	// 	const inputs = [firstName, lastName, username, email, password];
-	// 	const bool = inputs.some((element) => element.trim() === '');
-	// 	if (!bool) {
-	// 		alert('You must fill out all the input fields!');
-	// 		return null;
-	// 	} else {
-	// 		const newUser = { firstName, lastName, username, email, password };
-
-	// 		fetch('http://localhost:3001/users', {
-	// 			method: 'POST',
-	// 			headers: {
-	// 				'Content-type': 'application/json',
-	// 			},
-	// 			body: JSON.stringify(newUser),
-	// 		});
-
-	// 		setFirstName('');
-	// 		setLastName('');
-	// 		setUsername('');
-	// 		setEmail('');
-	// 		setPassword('');
-	// 		handleAddNewUser()
-
-	// 	}
-	// }
 
 	return (
 		<Container>

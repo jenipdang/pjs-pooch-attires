@@ -53,12 +53,12 @@ const Link = styled.a`
 const Signin = () => {
 	const [username, setUsername] = useState('');
 	const [password, setPassword] = useState('');
-	const [error, setError] = useState(null);
 	const [loading, setLoading] = useState(false);
 	let navigate = useNavigate();
 
 	const handleSignin = () => {
 		navigate('/account/profile');
+		setLoading(true)
 	};
 
 	return (
@@ -78,7 +78,6 @@ const Signin = () => {
 						onChange={(e) => setPassword(e.target.value)}
 						placeholder="password"
 					/>
-					{error && <div className="error">{error}</div>}
 					<Button
 						value={loading ? 'Loading...' : 'Login'}
 						disabled={loading}
