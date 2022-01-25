@@ -1,7 +1,7 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 
-const Profile = ({ users }) => {
+const Profile = () => {
 	let history = useNavigate();
 
 	const handleSignout = () => {
@@ -11,7 +11,7 @@ const Profile = ({ users }) => {
 		<div className="container">
 			<div className="text ">
 				<h2 style={{ textAlign: 'center', marginBottom: '1rem' }}>
-					Welcome {users.firstName}!
+					Welcome !!
 				</h2>
 			</div>
 			<input className='btn btn-dark m-4' type="button" value="Signout" onClick={handleSignout} />
