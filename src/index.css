@@ -70,4 +70,8 @@ body {
   text-transform: uppercase;
 }
 
+.scroll-container {
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+}
 

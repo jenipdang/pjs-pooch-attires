@@ -6,6 +6,7 @@ header{
     align-items: center;
     overflow: hidden;
 }
+
 header .logo a{
     text-decoration: none;
     text-transform: uppercase;

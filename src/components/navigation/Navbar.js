@@ -13,7 +13,7 @@ const NavBar = () => {
 	}
 
 	return (
-		<header className='bg-white py-3 shadow-sm'>
+		<header className='navbar sticky-top bg-white py-3 shadow-sm'>
 			<div className="menu" onClick={mobileMenuToggle}>
 				<i className="fa fa-bars" alt="mobile menu bar" width="20"></i>
 			</div>

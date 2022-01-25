@@ -66,7 +66,7 @@ const ProductContainer = () => {
 
 	return (
 		<>
-		<Container>
+		<Container >
 			<Search products={products} term={search} searchKeyword={searchHandler} />
 			<FilterCategory filterResult={filterResult} />
 			<ProductList products={searchResult} />
