@@ -1,35 +1,36 @@
 import React, { useEffect } from 'react';
 import Signin from './Signin';
+import Profile from './Profile'
 import {useState} from 'react';
 import Register from './Register';
 
-
-
 const Account = () => {
-	const [ data, setData ] = useState({ users: [] })
+	const [users, setUsers] = useState([])
+	
+	useEffect(() => {
+		fetchData()
+	}, [])
 
-	const handleAddNewUser = (user) => {
-		let users = data["users"]
-
-		fetch('http://localhost:3001/users', {
-			method: "POST",
-			headers: {
-				"Content-type": "application/json",
-			},
-			body: JSON.stringify(user),
+	const fetchData = async () => {
+		await fetch('http://localhost:3001/users')
+		.then (r => r.json())
+		.then (usersData => setUsers(usersData))
+		.catch((err) => {
+			alert(err)
 		})
-		.then((r) => r.json())
-		.then((data) => {
-			console.log(data)
-			users.push(data)
-			setData({ users: users })
-		})	
 	}
+	
+	const handleAddNewUser = (newUser) => {
+		return setUsers([...users, newUser])
+	}
+
+	console.log(users)
 	
 	return (
 		<div>
-				<Signin />
-				<Register handleAddNewUser={handleAddNewUser}/>
+				<Signin users={users}/>
+				<Profile users={users}/>
+				<Register addUser={handleAddNewUser}/>
 		</div>
 	);
 };

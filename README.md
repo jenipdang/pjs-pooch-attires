@@ -12,7 +12,7 @@ This application was built with React, JavaScript, Boostrap, Semanitc UI, and CS
 1. Fork and clone the repository. You will need node and npm intalled globally on your machine
 2. CD into the project
 3. Installation: ```npm install``` 
-4. Run the json-server: ```npm run server``` or ```json-server --watch db.json -p 3001```
+4. CD into the data folder and run the json-server: ```npm run server``` or ```json-server --watch db.json -p 3001```
 5. Run the React server: ```npm start```
 
 Runs the app in the development mode.\

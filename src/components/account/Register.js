@@ -46,14 +46,44 @@ const Button = styled.button`
 	cursor: pointer;
 `;
 
-const Register = ({handleAddNewUser}) => {
+const Register = ({ addUser }) => {
 	const [firstName, setFirstName] = useState('');
 	const [lastName, setLastName] = useState('');
 	const [username, setUsername] = useState('');
 	const [email, setEmail] = useState('');
 	const [password, setPassword] = useState('');
 
+	const handleSubmit = (e) => {
+		e.preventDefault();
+		if (
+			firstName.trim() === '' ||
+			lastName.trim() === '' ||
+			username.trim() === '' ||
+			email.trim() === '' ||
+			password.trim() === ''
+		) {
+			alert('Please Fill Out All Fields');
+			return null;
+		}
 
+		const newUser = { firstName, lastName, username, email, password };
+
+		fetch('http://localhost:3001/users', {
+			method: 'POST',
+			headers: { 'Content-type': 'application/json' },
+			body: JSON.stringify(newUser),
+		})
+			.then((r) => r.json())
+			.then(addUser)
+			.catch((err) => {
+				console.err('ERROR:', err);
+			});
+		setFirstName('');
+		setLastName('');
+		setUsername('');
+		setEmail('');
+		setPassword('');
+	};
 	// const handleSubmit = (e) => {
 	// 	e.preventDefaul();
 	// 	const inputs = [firstName, lastName, username, email, password];
@@ -62,30 +92,31 @@ const Register = ({handleAddNewUser}) => {
 	// 		alert('You must fill out all the input fields!');
 	// 		return null;
 	// 	} else {
-			// const newUser = { firstName, lastName, username, email, password };
+	// 		const newUser = { firstName, lastName, username, email, password };
 
-			// fetch('http://localhost:3001/users', {
-			// 	method: 'POST',
-			// 	headers: {
-			// 		'Content-type': 'application/json',
-			// 	},
-			// 	body: JSON.stringify(newUser),
-			// });
+	// 		fetch('http://localhost:3001/users', {
+	// 			method: 'POST',
+	// 			headers: {
+	// 				'Content-type': 'application/json',
+	// 			},
+	// 			body: JSON.stringify(newUser),
+	// 		});
 
-		// 	setFirstName('');
-		// 	setLastName('');
-		// 	setUsername('');
-		// 	setEmail('');
-		// 	setPassword('');
-	
-		// }
-	// };
+	// 		setFirstName('');
+	// 		setLastName('');
+	// 		setUsername('');
+	// 		setEmail('');
+	// 		setPassword('');
+	// 		handleAddNewUser()
+
+	// 	}
+	// }
 
 	return (
 		<Container>
 			<Wrapper>
 				<Title>CREATE AN ACCOUNT</Title>
-				<Form onSubmit={handleAddNewUser}>
+				<Form onSubmit={handleSubmit}>
 					<Input
 						type="text"
 						onChange={(e) => setFirstName(e.target.value)}
@@ -130,7 +161,7 @@ const Register = ({handleAddNewUser}) => {
 						By creating an account, I consent to the processing of my personal
 						data in accordance with the <b>PRIVACY POLICY</b>
 					</Agreement>
-					<Button type="submit" value="Create">
+					<Button>
 						CREATE
 					</Button>
 				</Form>

@@ -28,11 +28,11 @@ nav ul li a:hover{
     color: brown;
 }
 
-nav .nav-cart{
+/* nav .nav-cart{
     cursor: pointer;
     position: relative;
-}
-nav .nav-cart span{
+} */
+/* nav .nav-cart span{
     position: absolute;
     top:-12px;
     right: -7px;
@@ -42,7 +42,7 @@ nav .nav-cart span{
     padding: 3px 5px;
     border-radius: 50%;
     z-index: -1;
-}
+} */
 header .menu,
 header .close{
     cursor: pointer;

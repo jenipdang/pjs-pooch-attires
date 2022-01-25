@@ -1,4 +1,4 @@
-import React, { useContext, useState } from 'react';
+import React, { useState } from 'react';
 import { Card } from 'react-bootstrap';
 import '../css/Details.css';
 import { useGlobalContext } from '../data/context';

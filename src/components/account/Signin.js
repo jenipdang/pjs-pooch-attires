@@ -55,21 +55,35 @@ const Signin = () => {
 	const [password, setPassword] = useState('');
 	const [error, setError] = useState(null);
 	const [loading, setLoading] = useState(false);
-  let navigate = useNavigate()
+	let navigate = useNavigate();
 
-  const handleSignin = () => {
-    navigate('/account/profile')
-  }
+	const handleSignin = () => {
+		navigate('/account/profile');
+	};
 
 	return (
 		<Container>
 			<Wrapper>
 				<Title>SIGN IN</Title>
 				<Form>
-					<Input type="text" value={username} onChange={e => setUsername(e.target.value)} placeholder="username" />
-					<Input type="password" value={password} onChange={e => setPassword(e.target.value)} placeholder="password" />
+					<Input
+						type="text"
+						value={username}
+						onChange={(e) => setUsername(e.target.value)}
+						placeholder="username"
+					/>
+					<Input
+						type="password"
+						value={password}
+						onChange={(e) => setPassword(e.target.value)}
+						placeholder="password"
+					/>
 					{error && <div className="error">{error}</div>}
-					<Button value={loading ? 'Loading...' : 'Login'} disabled={loading} onClick={handleSignin}>
+					<Button
+						value={loading ? 'Loading...' : 'Login'}
+						disabled={loading}
+						onClick={handleSignin}
+					>
 						LOGIN
 					</Button>
 					<Link>DO NOT YOU REMEMBER THE PASSWORD?</Link>
