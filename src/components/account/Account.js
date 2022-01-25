@@ -24,7 +24,6 @@ const Account = () => {
 		return setUsers([...users, newUser])
 	}
 
-	console.log(users)
 	
 	return (
 		<div>

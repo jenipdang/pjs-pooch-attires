@@ -1,11 +1,11 @@
-import React, { useState, useContext } from 'react';
+import React, { useState } from 'react';
 import '../css/NavBar.css';
 import { Link } from 'react-router-dom';
-import { DataContext } from '../data/context'
+import { useGlobalContext } from '../data/context'
 import { FaSignInAlt } from 'react-icons/fa'
 
 const NavBar = () => {
-	const { cart } = useContext(DataContext)
+	const { cart } = useGlobalContext()
 	const [isToggle, setIsToggle] = useState(false)
 
 	const mobileMenuToggle = () => {

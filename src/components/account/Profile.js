@@ -7,6 +7,7 @@ const Profile = () => {
 	const handleSignout = () => {
 		history('/account/signin');
 	};
+	
 	return (
 		<div className="container">
 			<div className="text ">

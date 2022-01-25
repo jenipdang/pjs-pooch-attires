@@ -23,6 +23,7 @@ You may also see any lint errors in the console.
 
 ## Project Screen Shot(s)
 
+
 ## Reflection
 
 This was almost a 4 week long project built during my second phase at Flatiron School. Project goals included 

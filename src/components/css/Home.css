@@ -43,18 +43,17 @@ Variables
     --fixed-width: 620px;
   }
   
-  /* section */
+  /* 
+  =============== 
+  section 
+  =============== 
+  */
   .section {
     width: 90vw;
     margin: 5rem auto;
     max-width: var(--max-width);
   }
   
-  @media screen and (min-width: 690px) {
-    .section {
-      width: 95vw;
-    }
-  }
   /*
   =============== 
   Slider
@@ -183,4 +182,10 @@ Variables
   }
   article.nextSlide {
     transform: translateX(100%);
+  }
+  
+  @media screen and (min-width: 690px) {
+    .section {
+      width: 95vw;
+    }
   }

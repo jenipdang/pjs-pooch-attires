@@ -18,7 +18,6 @@ function Search({ term, searchKeyword }) {
         placeholder="Product Search"
         onChange={getSearchTerm}
       />
-      <button className="btn btn-outline-dark" type="submit">Search</button>
     </form>
   );
 }

@@ -75,7 +75,6 @@ const Register = () => {
 			headers: { 'Content-Type': 'application/json' },
 			body: JSON.stringify(newUser),
 		})
-			.then((r) => r.json())
 			.catch((err) => {
 				console.err('ERROR:', err);
 			});
@@ -84,7 +83,7 @@ const Register = () => {
 		setUsername('');
 		setEmail('');
 		setPassword('');
-		history('/profile')
+		history('/account/profile')
 
 	};
 

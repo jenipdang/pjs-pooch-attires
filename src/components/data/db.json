@@ -372,6 +372,22 @@
       "email": "fd2303@yahoo.com",
       "password": "123456",
       "id": 2
+    },
+    {
+      "firstName": "Tracy",
+      "lastName": "Smith",
+      "username": "tracysmith",
+      "email": "tracysmith@yahoo.com",
+      "password": "123456",
+      "id": 3
+    },
+    {
+      "firstName": "Wiliam",
+      "lastName": "Smith",
+      "username": "williamsmith",
+      "email": "williamsmith@aol.com",
+      "password": "123456sm",
+      "id": 4
     }
   ]
 }

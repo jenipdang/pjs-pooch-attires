@@ -8,12 +8,11 @@ import { useGlobalContext } from '../data/context';
 const ProductDetails = () => {
 	const { addItem } = useGlobalContext()
 	const { id } = useParams();
-	const [product, setProduct] = useState([]);
-	const [loading, setLoading] = useState(false);
+	const [product, setProduct] = useState({});
+	const [loading, setLoading] = useState(true);
 
 	useEffect(() => {
 		const getProduct = async () => {
-			setLoading(true);
 			const response = await fetch(` http://localhost:3001/products/${id}`);
 			setProduct(await response.json());
 			setLoading(false);
@@ -27,7 +26,7 @@ const ProductDetails = () => {
 			<Card>
 				<div className="details" key={id}>
 					<div className="image">
-						<img src={window.location.origin + '/images/'} alt={name} />
+						<img src={window.location.origin + images.front} alt={name} />
 					</div>
 					<div className="box">
 						<div className="row">
@@ -49,6 +48,7 @@ const ProductDetails = () => {
 	};
 
 	return (
+
 		<div>
 			<div className="container py-5">
 				<div className="row py-4">
