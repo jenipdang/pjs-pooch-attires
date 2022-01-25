@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 import { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 
 const Container = styled.div`
 	width: 100vw;
@@ -46,7 +47,8 @@ const Button = styled.button`
 	cursor: pointer;
 `;
 
-const Register = ({ addUser }) => {
+const Register = () => {
+	const history = useNavigate()
 	const [firstName, setFirstName] = useState('');
 	const [lastName, setLastName] = useState('');
 	const [username, setUsername] = useState('');
@@ -70,11 +72,10 @@ const Register = ({ addUser }) => {
 
 		fetch('http://localhost:3001/users', {
 			method: 'POST',
-			headers: { 'Content-type': 'application/json' },
+			headers: { 'Content-Type': 'application/json' },
 			body: JSON.stringify(newUser),
 		})
 			.then((r) => r.json())
-			.then(addUser)
 			.catch((err) => {
 				console.err('ERROR:', err);
 			});
@@ -83,6 +84,8 @@ const Register = ({ addUser }) => {
 		setUsername('');
 		setEmail('');
 		setPassword('');
+		history('/profile')
+
 	};
 	// const handleSubmit = (e) => {
 	// 	e.preventDefaul();
@@ -161,7 +164,7 @@ const Register = ({ addUser }) => {
 						By creating an account, I consent to the processing of my personal
 						data in accordance with the <b>PRIVACY POLICY</b>
 					</Agreement>
-					<Button>
+					<Button type='submit' value= "New User">
 						CREATE
 					</Button>
 				</Form>

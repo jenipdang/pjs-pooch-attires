@@ -356,7 +356,6 @@
       }
     }
   ],
-  
   "users": [
     {
       "id": 1,
@@ -365,6 +364,14 @@
       "username": "jdang1234",
       "email": "jenipdang@yahoo.com",
       "password": "1234567jd"
+    },
+    {
+      "firstName": "Francis",
+      "lastName": "Dang",
+      "username": "fdang",
+      "email": "fd2303@yahoo.com",
+      "password": "123456",
+      "id": 2
     }
   ]
 }
