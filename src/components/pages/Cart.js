@@ -29,8 +29,6 @@ const Cart = () => {
 					</h2>
 				)}
 			</div>
-			<div>
-				<h1 className='text' style={{ textAlign: 'center'}}>Your Shopping Cart</h1>
 			{cart.map((item, index) => (
 				<div className="details cart" key={index}>
 					<img src={item.images.front} alt={item.name} />
@@ -69,7 +67,6 @@ const Cart = () => {
 						</button>
 					</>
 				)}
-			</div>
 			</div>
 		</section>
 	);
