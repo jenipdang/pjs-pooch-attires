@@ -21,9 +21,6 @@ Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 The page will reload when you make changes.\
 You may also see any lint errors in the console.
 
-## Project Screen Shot(s)
-
-
 ## Reflection
 
 This was almost a 4 week long project built during my second phase at Flatiron School. Project goals included 
